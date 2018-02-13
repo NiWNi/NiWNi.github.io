@@ -1,10 +1,29 @@
 
 
+html, body {
+    height: 100%;
+}
+
 head {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.logo img {
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-header {
+    flex: 0 1 auto;
+}
+
+.main-content {
+    flex: 1 1 auto;
+    display: flex;
+
+}
+
+.main-header img {
     display: block;
     margin: 30px auto 30px auto;
     padding: 30px auto;
@@ -33,6 +52,7 @@ nav ul li a {
 main {
     width: 60%;
     margin: 0px auto;
+    padding: 0px;
     text-align: center;
 }
 
@@ -41,14 +61,21 @@ main {
 }
 
 .thumbnail-item {
-    width: 5px;
+    display: inline-block;
+
     border: 1px solid rgb(100%, 100%, 100%);
     border: 1px solid rgba(100%, 100%, 100%, 0.8);
-
-    display: inline;
 }
 
 .thumbnail-list {
     list-style: none;
     padding: 0px;
+    margin: 0px;
+}
+
+footer {
+    width: 60%;
+    margin: 0px auto;
+    text-align: center;
+
 }
