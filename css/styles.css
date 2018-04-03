@@ -11,6 +11,7 @@ head {
 body {
     display: flex;
     flex-direction: column;
+    font-family: Montserrat, sans-serif;
 }
 
 .main-header {
@@ -27,7 +28,7 @@ body {
     display: block;
     margin: 30px auto 30px auto;
     padding: 30px auto;
-    width: 200px;
+    width: 150px;
 }
 
 .navigation-bar {
@@ -44,9 +45,22 @@ nav ul li {
 }
 
 nav ul li a {
-    font-size: 16px;
+    font-size: 1em;
     text-decoration: none;
+    color: black;
     padding: 10px;
+}
+
+nav ul li a:hover {
+    color: #793236;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+nav ul li a:visited {
+    color: #793236;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 main {
@@ -56,8 +70,32 @@ main {
     text-align: center;
 }
 
+.main-content ul li {
+    cursor: pointer;
+    position: relative;
+    border: 1px dashed black;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.back-side .front-side{
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.back-side {
+    background-color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.back-side {
+    transform: rotateY(180);
+}
+
 .thumbnail-image {
-    width: 250px;
+    width: 150px;
 }
 
 .thumbnail-item {
