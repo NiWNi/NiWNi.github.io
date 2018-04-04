@@ -1,7 +1,8 @@
 
 
 html, body {
-    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 head {
@@ -50,6 +51,15 @@ body {
     list-style-type: none;
 }
 
+/* Height different sections in the same page */
+
+.websites,
+.about,
+.contact,
+.arch {
+    height: 1200px;
+}
+
 nav ul li {
     display: inline;
 }
@@ -80,7 +90,7 @@ main {
     text-align: center;
 }
 
-.main-content ul li {
+.thumbnail-list li {
     cursor: pointer;
     position: relative;
     border: 1px dotted black;
