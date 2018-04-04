@@ -54,7 +54,13 @@
 
     <main> 
 
+        <section class="home">
+            <a id="Home"></a>
+            <p>Home</p>
+        </section>
+
         <section class="arch">
+            <a id="Arch-Portfolio"></a>
             <ul class="thumbnail-list">
                 <li class="thumbnail-item">
                     <div class="front-side">
@@ -166,6 +172,25 @@
         <section class="websites">
             <a id="Webs"></a>
             <p>Websites</p>
+            <ul class="websites-list">
+                <li>
+                    <a href="https://niweini.github.io/Memory-Game/">
+                        <img src="img/memory_game.png" alt="Arcade game">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://niweini.github.io/Memory-Game/">
+                        <img src="img/memory_game.png" alt="Matching game">
+                        <span>Pixel art maker</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://niweini.github.io/Pixel-Art-Maker/">
+                        <img src="img/pixel_art.png" alt="Matching game">
+                        <span>Pixel art maker</span>
+                    </a>
+                </li>
+            </ul>
         </section>
 
         <section class="about">
@@ -176,25 +201,31 @@
         <section class="contact">
             <a id="Contact"></a>
             <p>Contact</p>
+            <form>
+                <label for="name">Full name</label>
+                <input type="text" id="name" placeholder="Your full name..">
+
+                <label for="email">Your e-mail</label>
+                <input type="text" id="email" placeholder="Your e-mail..">
+
+                <label for="subject">Subject</label>
+                <textarea name="subject" id="subject" cols="30" rows="10" placeholder="Hire a web developer or leave a comment.."></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
         </section>
     </main>
 
     <footer>
-
+        <ul>
+            <li><a href="https://www.linkedin.com/in/wei-ni-ni-23500611a" class="fab fa-linkedin"></a></li>
+            <li><a href="https://www.instagram.com/niweini/" class="fab fa-instagram"></a></li>
+            <li><a href="https://github.com/NiWeiNi" class="fab fa-github"></a></li>
+        </ul>
     </footer>
+
     <script src="js/lightbox.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
-    <script>
-    $('.smooth').on('click', function() {
-        $.smoothScroll({
-            scrollElement: $('body'),
-            scrollTarget: '#' + this.id
-        });
-        
-        return false;
-    });
-    </script>
+    
 </body>
 
 </html>

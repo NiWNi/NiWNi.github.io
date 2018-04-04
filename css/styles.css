@@ -1,4 +1,14 @@
-
+/* Import font icons */
+@font-face {
+    font-family: "brands";
+    src: url("../fonts/fa-brands-400.eot");
+    src: url("../fonts/fa-brands-400.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/fa-brands-400.woff") format("woff"),
+        url("../fonts/fa-brands-400.ttf") format("truetype"),
+        url("../fonts/fa-brands-400.svg#brands") format("svg");
+        font-weight: normal;
+        font-style: normal;
+}
 
 html, body {
     margin: 0;
@@ -51,15 +61,6 @@ body {
     list-style-type: none;
 }
 
-/* Height different sections in the same page */
-
-.websites,
-.about,
-.contact,
-.arch {
-    height: 1200px;
-}
-
 nav ul li {
     display: inline;
 }
@@ -82,6 +83,46 @@ nav ul li a:visited {
     font-size: 1.2em;
     font-weight: bold;
 }
+
+/* Height different sections in the same page */
+
+.home,
+.websites,
+.about,
+.contact,
+.arch {
+    height: 1200px;
+}
+
+
+/* Websites section */
+.websites {
+   
+}
+
+.websites-list {
+    list-style-type: none;
+}
+
+.websites-list li {
+    display: inline;
+}
+
+.websites-list li a {
+    text-decoration: none;
+}
+
+.websites-list li a img{
+    width: 300px;
+    border: 1px dotted black;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 5px;
+}
+
+
+/* Arch portfolio section */
+
 
 main {
     width: 60%;
@@ -132,10 +173,31 @@ main {
 }
 
 footer {
-    width: 60%;
-    margin: 0px auto;
-    text-align: center;
+    width: 100%;
+    font-family: brands, sans-serif;
+}
 
+footer ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    padding: 0;
+    margin-top: 5px;
+}
+
+footer ul li {
+    padding: 0;
+    min-width: 25px;
+    max-width: 25px;
+}
+
+footer ul li a {
+    font-family: brands, sans-serif;
+    font-size: 25px;
+    color: #000;
+    text-decoration: none;
 }
 
 /*
