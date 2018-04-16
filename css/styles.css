@@ -134,6 +134,15 @@ main {
     padding: 0px;
     text-align: center;
 }
+.section-titles {
+    padding: 50px 0 50px 0;
+}
+
+.arch {
+    width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+}
 
 .thumbnail-list li {
     cursor: pointer;
@@ -142,6 +151,8 @@ main {
     border-radius: 20px;
     margin: 10px;
     padding: 10px;
+    width: 200px;
+    height: 200px;
 }
 .thumbnail-item:hover {
     background-color: #793236;
@@ -155,7 +166,7 @@ main {
     background-color: white;
     text-align: center;
     text-transform: uppercase;
-    font-size: 1em;
+    font-size: 0.80em;
 }
 
 .back-side {
