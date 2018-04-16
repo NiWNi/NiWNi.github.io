@@ -49,7 +49,6 @@ body {
 .main-content {
     flex: 1 1 auto;
     display: flex;
-    height: 100vh;
 }
 
 .navigation-bar {
@@ -94,6 +93,12 @@ nav ul li a:visited {
     height: 1200px;
 }
 
+/* Home section */
+.home img {
+    width: 1700px;
+    margin: 0 auto;
+}
+
 
 /* Websites section */
 .websites {
@@ -125,7 +130,6 @@ nav ul li a:visited {
 
 
 main {
-    width: 60%;
     margin: 0px auto;
     padding: 0px;
     text-align: center;
@@ -139,7 +143,9 @@ main {
     margin: 10px;
     padding: 10px;
 }
-
+.thumbnail-item:hover {
+    background-color: #793236;
+}
 .back-side .front-side{
     position: absolute;
     backface-visibility: hidden;
@@ -149,6 +155,7 @@ main {
     background-color: white;
     text-align: center;
     text-transform: uppercase;
+    font-size: 1em;
 }
 
 .back-side {
