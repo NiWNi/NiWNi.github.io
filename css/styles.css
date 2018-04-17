@@ -26,7 +26,13 @@ body {
 }
 
 .main-header {
-    flex: 0 1 auto;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+    left: auto;
+    right: auto;
 }
 
 .logo {
