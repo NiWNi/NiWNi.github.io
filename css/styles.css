@@ -52,13 +52,10 @@ body {
     font-size: 0.8em;
 }
 
-.main-content {
-    flex: 1 1 auto;
-    display: flex;
-}
-
 .navigation-bar {
     text-align: center;
+    display: table;
+    margin: 0 auto;
 }
 
 .navigation-list {
@@ -66,7 +63,7 @@ body {
     list-style-type: none;
 }
 
-nav ul li {
+.navigation-list li {
     display: inline;
 }
 
@@ -100,11 +97,32 @@ nav ul li a:visited {
 }
 
 /* Home section */
-.home img {
-    width: 1700px;
-    margin: 0 auto;
+.home {
+    position: relative;
+    overflow: hidden;
 }
 
+.home .image {
+    background: url(../img/skyline.svg);
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 300%;
+    animation: slideshow 20s linear infinite;
+    transform: translate3d(0, 0, 0);
+}
+
+@keyframes slideshow {
+    0%    { left: 0; }
+    100%  { left: -200%; }
+  }
+
+@keyframes moveSlideshow {  
+    100% { 
+      -webkit-transform: translateX(-200%);  
+    }
+  }
 
 /* Websites section */
 .websites {
@@ -195,6 +213,36 @@ main {
     padding: 0px;
     margin: 0px;
 }
+
+/* Websites section */
+
+.websites {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.websites-list {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.websites-list li {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contact section */
+
+.contact {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+/* Footer section */
 
 footer {
     width: 100%;
