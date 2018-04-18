@@ -30,26 +30,13 @@ body {
     position: fixed;
     width: 100%;
     background-color: white;
+    opacity: 0.95;
     z-index: 1;
-    left: auto;
-    right: auto;
+    margin: 0 auto 10px auto;
 }
 
 .logo {
-    text-align: center;
-}
-
-.logo img {
-    display: block;
-    margin: 30px auto 10px auto;
-    padding: 30px auto;
     width: 150px;
-}
-
-.logo p {
-    padding-top: 0;
-    margin-top: 0;
-    font-size: 0.8em;
 }
 
 .navigation-bar {
@@ -86,7 +73,7 @@ nav ul li a:visited {
     font-weight: bold;
 }
 
-/* Height different sections in the same page */
+/* Height of the different sections in the same page */
 
 .home,
 .websites,
@@ -100,6 +87,7 @@ nav ul li a:visited {
 .home {
     position: relative;
     overflow: hidden;
+    width: 100vw;
 }
 
 .home .image {
@@ -109,20 +97,20 @@ nav ul li a:visited {
     top: 0;
     height: 100%;
     width: 300%;
-    animation: slideshow 20s linear infinite;
+    animation: slideshow 40s linear infinite;
     transform: translate3d(0, 0, 0);
 }
 
 @keyframes slideshow {
     0%    { left: 0; }
     100%  { left: -200%; }
-  }
+}
 
 @keyframes moveSlideshow {  
     100% { 
       -webkit-transform: translateX(-200%);  
     }
-  }
+}
 
 /* Websites section */
 .websites {
