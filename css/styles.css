@@ -10,6 +10,13 @@
         font-style: normal;
 }
 
+@font-face {
+    font-family: "logofont";
+    src: url("../fonts/logofont.otf") format("opentype");
+        font-weight: normal;
+        font-style: normal;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -301,6 +308,15 @@ footer ul li a {
 
 .last-words {
     font-size: .7em;
+}
+
+.logotype {
+    font-family: logofont, Montserrat, sans-serif;
+    font-size: 1.4em;
+}
+
+.w-logo {
+    color: #793236;
 }
 
 /*
