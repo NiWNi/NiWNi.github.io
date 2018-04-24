@@ -252,16 +252,17 @@ form {
 }
 
 label {
-    padding: 0 10px;
+    padding: 10px 10px 0 10px;
 }
 
 input[type=text] {
     border: 1px solid black;
-    padding: 12px; 
+    padding: 12px;
+    width: 50%;
 }
 
 input[type=text]:focus {
-    border: 5px solid #793236;
+    border: 3px solid #793236;
     box-shadow: none;
 }
 
@@ -272,6 +273,24 @@ textarea {
     border: 1px solid black;
     border-radius: 5px;
     resize: none;
+}
+
+textarea:focus {
+    border: 3px solid #793236;
+}
+
+input[type=submit] {
+    padding: 10px;
+    margin: 10px 0;
+    border: 3px solid #793236;
+    background-color: none;
+    background: none;
+}
+
+input[type=submit]:hover {
+    background-color: #793236;
+    color: white;
+    cursor: pointer;
 }
 
 /* Footer section */
