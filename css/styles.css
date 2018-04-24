@@ -279,7 +279,7 @@ textarea {
 footer {
     width: 100%;
     font-family: brands, sans-serif;
-    margin-top: 20px;
+    margin-top: 50px;
     text-align: center;
 }
 
@@ -294,7 +294,7 @@ footer ul {
 }
 
 footer ul li {
-    padding: 0;
+    padding: 0 18px;
     min-width: 25px;
     max-width: 25px;
 }
@@ -306,7 +306,7 @@ footer ul li a {
     text-decoration: none;
 }
 
-.last-words {
+.signature {
     font-size: .7em;
 }
 
