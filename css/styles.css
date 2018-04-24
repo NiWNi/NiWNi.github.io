@@ -42,12 +42,13 @@ body {
 .navigation-bar {
     text-align: center;
     display: table;
-    margin: 0 auto;
+    margin: 25px auto 0px auto;
 }
 
 .navigation-list {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     list-style-type: none;
+    margin-bottom: 8px;
 }
 
 .navigation-list li {
@@ -58,13 +59,12 @@ nav ul li a {
     font-size: 1em;
     text-decoration: none;
     color: black;
-    padding: 10px;
+    padding: 0 15px;
 }
 
 nav ul li a:hover {
     color: #793236;
-    font-size: 1.2em;
-    text-transform: uppercase;
+    font-size: 1.1em;
 }
 
 nav ul li a:visited {
@@ -73,18 +73,9 @@ nav ul li a:visited {
     font-weight: bold;
 }
 
-/* Height of the different sections in the same page */
-
-.home,
-.websites,
-.about,
-.contact,
-.arch {
-    height: 1200px;
-}
-
 /* Home section */
 .home {
+    height: 1200px;
     position: relative;
     overflow: hidden;
     width: 100vw;
@@ -115,48 +106,28 @@ nav ul li a:visited {
     }
 }
 
-/* Websites section */
-.websites {
-   
-}
-
-.websites-list {
-    list-style-type: none;
-}
-
-.websites-list li {
-    display: inline;
-}
-
-.websites-list li a {
-    text-decoration: none;
-}
-
-.websites-list li a img{
-    width: 300px;
-    border: 1px dotted black;
-    border-radius: 15px;
-    margin: 10px;
-    padding: 5px;
-}
-
-
-/* Arch portfolio section */
-
-
 main {
     margin: 0px auto;
     padding: 0px;
     text-align: center;
 }
+
 .section-titles {
     padding: 50px 0 50px 0;
 }
+
+/* Arch portfolio section */
 
 .arch {
     width: 1200px;
     text-align: center;
     margin: 0 auto;
+}
+
+.thumbnail-list {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
 }
 
 .thumbnail-list li {
@@ -178,7 +149,6 @@ main {
 }
 
 .back-side {
-    background-color: white;
     text-align: center;
     text-transform: uppercase;
     font-size: 0.80em;
@@ -199,29 +169,61 @@ main {
     border: 1px solid rgba(100%, 100%, 100%, 0.8);
 }
 
-.thumbnail-list {
-    list-style: none;
-    padding: 0px;
-    margin: 0px;
-}
-
 /* Websites section */
 
 .websites {
     width: 1200px;
+    height: 1000px;
     margin: 0 auto;
     text-align: center;
 }
 
 .websites-list {
-    display: flex;
-    flex-wrap: wrap;
-
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
-.websites-list li {
+.websites-item {
+    border: 1px dotted black;
+    border-radius: 15px;
+}
+
+.websites-list li a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.websites-list li a img {
+    width: 150px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.website-item {
+    display: inline-block;
+}
+
+/* About section */
+
+.about {
+    width: 1200px;
+    margin: 0 auto;
+    color: white;
+    background-color: #793236;
+}
+
+.about-content {
     display: flex;
-    flex-direction: column;
+    text-align: justify;
+    text-justify: auto;
+}
+
+.column {
+    width: 50%;
+    padding: 0 20px;
 }
 
 /* Contact section */
@@ -229,8 +231,23 @@ main {
 .contact {
     width: 1200px;
     margin: 0 auto;
+    text-align: center;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    text-justify: newspaper;
+}
+.name-email {
+    padding: 20px 0;
+    align-content: center;
+}
+
+input[type=text] {
+
+}
 
 
 /* Footer section */

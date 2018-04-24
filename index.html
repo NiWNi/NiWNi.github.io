@@ -182,11 +182,12 @@
             <a id="Webs"></a>
             <h1 class="section-titles">Websites</h1>
             <ul class="websites-list">
-                <li>
+                <li class="websites-item">
                     <a href="https://niweini.github.io/Memory-Game/">
                         <img src="img/memory_game.png" alt="Arcade game">
+                        <div class="website-name">Arcade Game</div>
                     </a>
-                    <a href="https://niweini.github.io/Memory-Game/">Arcade Game</a>
+                    <a href="https://niweini.github.io/Memory-Game/"></a>
                 </li>
                 <li>
                     <a href="https://niweini.github.io/Memory-Game/">
@@ -212,18 +213,36 @@
         <section class="about">
             <a id="About"></a>
             <h1 class="section-titles">About</h1>
-            <p>I am an architect, one of those from the old school who builds buildings, but recently I have discovered my passion designing and building digital worlds.</p>
+            <div class="about-content">
+                <div class="column">
+                    <p>I am an architect, one of those from the old school who builds buildings, but recently I 
+                    have discovered my passion designing and building digital worlds.</p>
+                    <p>All came from designing scripts in Dynamo to extend the potential of Revit and to facilitate architects
+                    to transition from CAD to BIM keeping some essential steps from the all workflow of the office to 
+                    BIM.</p>
+                </div>
+                <div class="column">
+                    <p>I create websites form scratch, from design to development, easy to mantain and modify with clear handwritten code.</p>
+                    <p>Besides that, a huge fan of everything that is genuinely good, from Wrigth´s masterpieces to
+                    literature´s genius, interested in behavioral theories, new tech and photography.
+                    </p>
+                    <p>Thanks for reading until here, would be wonderful if we can collaborate in some amazing projects.
+                    </p>
+                </div>
+            </div>
         </section>
 
         <section class="contact">
             <a id="Contact"></a>
             <h1 class="section-titles">Contact</h1>
             <form>
-                <label for="name">Full name</label>
-                <input type="text" id="name" placeholder="Your full name..">
-
-                <label for="email">Your e-mail</label>
-                <input type="text" id="email" placeholder="Your e-mail..">
+                <div class="name-email">
+                    <label for="name">Full name</label>
+                    <input type="text" id="name" placeholder="Full name..">
+    
+                    <label for="email">Your e-mail</label>
+                    <input type="text" id="email" placeholder="e-mail..">
+                </div>
 
                 <label for="subject">Subject</label>
                 <textarea name="subject" id="subject" cols="30" rows="10" placeholder="Hire a web developer or leave a comment.."></textarea>
