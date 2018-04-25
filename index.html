@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>nWn Arch &amp; Design</title>
+    <title>nWn Architecture &amp; Web Design</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
@@ -183,29 +183,28 @@
             <h1 class="section-titles">Websites</h1>
             <ul class="websites-list">
                 <li class="websites-item">
+                    <div class="website-name">Photography Portfolio</div>
                     <a href="https://niweini.github.io/Memory-Game/">
-                        <img src="img/memory_game.png" alt="Arcade game">
-                        <div class="website-name">Arcade Game</div>
+                        <img src="img/photography_portfolio.png" alt="Photography portfolio">
                     </a>
-                    <a href="https://niweini.github.io/Memory-Game/"></a>
                 </li>
-                <li>
+                <li class="websites-item">
+                    <div class="website-name">Arcade Game</div>
                     <a href="https://niweini.github.io/Memory-Game/">
-                        <img src="img/memory_game.png" alt="Matching game">
+                        <img src="img/arcade_game.png" alt="Arcade game">
                     </a>
-                    <a href="https://niweini.github.io/Memory-Game/">Memory Game</a>
                 </li>
-                <li>
+                <li class="websites-item">
+                    <div class="website-name">Memory Game</div>
                     <a href="https://niweini.github.io/Pixel-Art-Maker/">
-                        <img src="img/pixel_art.png" alt="Matching game">
+                        <img src="img/memory_game.PNG" alt="Matching game">
                     </a>
-                    <a href="https://niweini.github.io/Pixel-Art-Maker/">Pixel Art Maker</a>
                 </li>
-                <li>
+                <li class="websites-item">
+                    <div class="website-name">Pixel Art Maker</div>
                     <a href="https://niweini.github.io/Photography-Portfolio">
-                        <img src="img/pixel_art.png" alt="Photography Portfolio">
+                        <img src="img/pixel_art.PNG" alt="pixel art maker">
                     </a>
-                    <a href="https://niweini.github.io/Photography-Portfolio">Photography Portfolio</a>
                 </li>
             </ul>
         </section>
@@ -215,11 +214,14 @@
             <h1 class="section-titles">About</h1>
             <div class="about-content">
                 <div class="column">
-                    <p>I am an architect, one of those from the old school who builds buildings, but recently I 
-                    have discovered my passion designing and building digital worlds.</p>
-                    <p>All came from designing scripts in Dynamo to extend the potential of Revit and to facilitate architects
-                    to transition from CAD to BIM keeping some essential steps from the all workflow of the office to 
-                    BIM.</p>
+                    <p>I have a Masters of architecture from UPM, Polytechnic University of Madrid, had several years experience
+                    working in different architecture offices but recently I have discovered my passion designing and building 
+                    digital worlds.</p>
+                    <p>The transition the architecture field is experiencing, to a much tehnological and digital linked profession, pushed our
+                    representation systems to test, and it will make radical changes in the near future. 
+                    All came from designing scripts in Dynamo to extend the potential of Revit and to facilitate architects
+                    to transition from CAD to BIM keeping some critical elements from the workflow of the office to 
+                    BIM, allowing data workflows and a smooth and succesful transition.</p>
                 </div>
                 <div class="column">
                     <p>I create websites form scratch, from design to development, easy to mantain and modify with clear handwritten code.</p>
@@ -228,7 +230,16 @@
                     </p>
                     <p>Thanks for reading until here, would be wonderful if we can collaborate in some amazing projects.
                     </p>
-                    <p>CV</p>
+                    <p class="cv-download">
+                        <a href="#">
+                            <img src="img/cv_logo.svg" alt="" class="cv-logo">
+                            <span>CV</span>
+                        </a>
+                        <a href="#">
+                            <img src="img/portfolio_logo.svg" alt="" class="cv-logo">
+                            <span>Portfolio</span>
+                        </a>
+                    </p>
                 </div>
             </div>
         </section>
@@ -236,19 +247,21 @@
         <section class="contact">
             <a id="Contact"></a>
             <h1 class="section-titles">Contact</h1>
-            <form>
+            <form action="https://formspree.io/nwnarchwebdesign@gmail.com" method="POST">
                 <div class="name-email">
-                    <label for="name"></label>
-                    <input type="text" id="name" placeholder="Full name">
+                    <label for="name">Full name</label>
+                    <input type="text" id="name" placeholder="Full name" name="name">
     
-                    <label for="email"></label>
-                    <input type="text" id="email" placeholder="e-mail">
+                    <label for="email">e-mail</label>
+                    <input type="text" id="email" placeholder="e-mail" name="_replyto">
                 </div>
 
-                <label for="subject"></label>
-                <textarea name="subject" id="subject" cols="30" rows="10" placeholder="Hire a web developer or leave a comment.."></textarea>
+                <label for="subject">Subject</label>
+                <textarea name="subject" id="subject" cols="30" rows="10" placeholder="Contact me for any listed service or leave a much appreciated comment..."></textarea>
+                
+                <input type="text" name="_gotcha" style="display:none">
 
-                <input type="submit" value="Submit">
+                <input type="submit" value="Send">
             </form>
         </section>
     </main>

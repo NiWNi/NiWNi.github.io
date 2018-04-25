@@ -147,9 +147,11 @@ main {
     width: 200px;
     height: 200px;
 }
+
 .thumbnail-item:hover {
     background-color: #793236;
 }
+
 .back-side .front-side{
     position: absolute;
     backface-visibility: hidden;
@@ -180,21 +182,26 @@ main {
 
 .websites {
     width: 1200px;
-    height: 1000px;
     margin: 0 auto;
     text-align: center;
 }
 
 .websites-list {
-    display: inline-block;
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
 .websites-item {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
     border: 1px dotted black;
-    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+    width: 350px;
+    height: 200px;
+    overflow: hidden;
 }
 
 .websites-list li a {
@@ -204,13 +211,7 @@ main {
 }
 
 .websites-list li a img {
-    width: 150px;
-    margin: 10px;
-    padding: 5px;
-}
-
-.website-item {
-    display: inline-block;
+    width: 100%;
 }
 
 /* About section */
@@ -233,6 +234,20 @@ main {
     padding: 0 20px;
 }
 
+.cv-download {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.cv-download a {
+    text-decoration: none;
+}
+
+.cv-logo {
+    width: 10%;
+}
+
+
 /* Contact section */
 
 .contact {
@@ -249,42 +264,54 @@ form {
     display: flex;
     padding: 20px 0;
     margin: 0 auto;
+    width: 100%;
 }
 
 label {
-    padding: 10px 10px 0 10px;
+    display: none;
 }
 
 input[type=text] {
     border: 1px solid black;
-    padding: 12px;
+    padding: 11px 21px;
     width: 50%;
 }
 
+#name {
+    margin-right: 10px;
+}
+
+#email {
+    margin-left: 10px;
+}
+
 input[type=text]:focus {
-    border: 3px solid #793236;
+    border: 2px solid #793236;
     box-shadow: none;
+    outline: 0;
 }
 
 textarea {
     width: 100%;
-    padding: 12px 20px;
+    padding: 11px 21px;
     box-sizing: border-box;
     border: 1px solid black;
-    border-radius: 5px;
     resize: none;
 }
 
 textarea:focus {
-    border: 3px solid #793236;
+    border: 2px solid #793236;
+    outline: 0;
 }
 
 input[type=submit] {
     padding: 10px;
-    margin: 10px 0;
-    border: 3px solid #793236;
+    margin: 15px 0;
+    border: 2px solid #793236;
     background-color: none;
     background: none;
+    font-weight: bold;
+    font-size: 1em;
 }
 
 input[type=submit]:hover {
