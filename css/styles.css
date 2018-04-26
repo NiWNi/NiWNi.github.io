@@ -85,11 +85,11 @@ nav ul li a:visited {
     height: 1200px;
     position: relative;
     overflow: hidden;
-    width: 100vw;
 }
 
 .home .image {
     background: url(../img/skyline.svg);
+    background-repeat: no-repeat;
     position: absolute;
     left: 0;
     top: 0;
@@ -392,6 +392,7 @@ footer ul li a {
 
 .signature {
     font-size: .7em;
+    text-align: center;
 }
 
 .logotype {

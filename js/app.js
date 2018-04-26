@@ -9,7 +9,7 @@ function checkClass() {
 }
 
 slideImage.addEventListener("click", checkClass);
-
+slideImage.addEventListener("touch", checkClass);
 
 // Smooth scroll jquery
 $(document).ready(function(){
