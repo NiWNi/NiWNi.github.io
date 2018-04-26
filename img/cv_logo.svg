@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 45.1 45.1" style="enable-background:new 0 0 45.1 45.1;" xml:space="preserve">
+	 viewBox="0 0 55 55" style="enable-background:new 0 0 55 55;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#000000;stroke-width:4;stroke-miterlimit:10;}
-	.st1{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+	.st0{fill:#FFFFFF;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-width:4;stroke-miterlimit:10;}
+	.st2{fill:#FFFFFF;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
 </style>
 <g>
-	<path d="M33.4,0H5.2v45.1h34.7V6.3L33.4,0z M8.2,42.1V3h23.7v4.8h5l0,34.3H8.2z"/>
+	<path class="st0" d="M47.7,9.3H19.4v45.1h34.7V15.6L47.7,9.3z M22.4,51.4V12.3h23.7v4.8h5v34.3H22.4z"/>
 	<g>
 		<g>
-			<line class="st0" x1="22.5" y1="16.6" x2="22.5" y2="22.7"/>
+			<line class="st1" x1="36.8" y1="25.9" x2="36.8" y2="32"/>
 			<g>
-				<polygon points="18.5,21.5 22.5,28.4 26.5,21.5 				"/>
+				<polygon class="st2" points="32.8,30.8 36.8,37.7 40.8,30.8 				"/>
 			</g>
 		</g>
 	</g>
-	<line class="st1" x1="17.9" y1="30.6" x2="27.2" y2="30.6"/>
+	<line class="st3" x1="32.1" y1="39.9" x2="41.5" y2="39.9"/>
 </g>
 </svg>
