@@ -85,6 +85,7 @@ nav ul li a:visited {
     height: 1200px;
     position: relative;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 .home .image {
@@ -129,6 +130,7 @@ main {
     width: 1200px;
     text-align: center;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .thumbnail-list {
@@ -184,6 +186,7 @@ main {
     width: 1200px;
     margin: 0 auto;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .websites-list {
@@ -221,6 +224,7 @@ main {
     margin: 0 auto;
     color: white;
     background-color: #793236;
+    box-sizing: border-box;
 }
 
 .about-content {
@@ -292,6 +296,7 @@ main {
     width: 1200px;
     margin: 0 auto;
     text-align: center;
+    box-sizing: border-box;
 }
 
 form {
@@ -365,6 +370,7 @@ footer {
     font-family: brands, sans-serif;
     margin-top: 50px;
     text-align: center;
+    box-sizing: border-box;
 }
 
 footer ul {
