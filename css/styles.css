@@ -393,6 +393,7 @@ footer ul li a {
 .signature {
     font-size: .7em;
     text-align: center;
+    margin: 0 auto;
 }
 
 .logotype {
@@ -403,6 +404,96 @@ footer ul li a {
 .w-logo {
     color: #793236;
 }
+
+/*
+*
+* Media queries
+*
+*
+*/
+
+/* Media query max 426px width */
+@media screen and (max-width: 426px) {
+
+
+
+    /* Contact */
+    .contact {
+        width: 100%;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .name-email {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    
+    label {
+        display: none;
+    }
+    
+    input[type=text] {
+        border: 1px solid black;
+        padding: 11px 21px;
+        margin: 10px;
+    }
+    
+    #name {
+        width: 100%;
+    }
+    
+    #email {
+        width: 100%;
+    }
+    
+    input[type=text]:focus {
+        border: 2px solid #793236;
+        box-shadow: none;
+        outline: 0;
+    }
+    
+    textarea {
+        width: 100%;
+        padding: 11px 21px;
+        margin: 10px;
+        box-sizing: border-box;
+        border: 1px solid black;
+        resize: none;
+    }
+    
+    textarea:focus {
+        border: 2px solid #793236;
+        outline: 0;
+    }
+    
+    input[type=submit] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px;
+        border: 2px solid #793236;
+        background-color: none;
+        background: none;
+        font-weight: bold;
+        font-size: 1em;
+    }
+    
+    input[type=submit]:hover {
+        background-color: #793236;
+        color: white;
+        cursor: pointer;
+    }
+
+    /* footer */
+
+}
+
+
+
 
 /*
 *
