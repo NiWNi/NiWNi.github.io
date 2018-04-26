@@ -10,6 +10,8 @@ function checkClass() {
 
 slideImage.addEventListener("click", checkClass);
 
+
+// Smooth scroll jquery
 $(document).ready(function(){
     $("#hamburgerIcon").click(function(){ //turns hamburger icon to X and back
       $("#line1").toggleClass("active");
