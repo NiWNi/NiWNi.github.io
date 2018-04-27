@@ -400,6 +400,7 @@ footer ul li a {
     font-size: .7em;
     text-align: center;
     margin: 0 auto;
+    padding-bottom: 20px;
 }
 
 .logotype {
@@ -408,6 +409,11 @@ footer ul li a {
 }
 
 .w-logo {
+    color: #793236;
+}
+
+.typewrite {
+    font-weight: bold;
     color: #793236;
 }
 
@@ -425,7 +431,7 @@ footer ul li a {
 
     /* Contact */
     .contact {
-        width: 100%;
+        width: 100vw;
     }
     
     form {
@@ -454,7 +460,7 @@ footer ul li a {
     }
     
     #email {
-        width: 100%;
+        width: 100vw;
     }
     
     input[type=text]:focus {
