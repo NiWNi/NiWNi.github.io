@@ -95,7 +95,7 @@ nav ul li a:visited {
     left: 0;
     top: 0;
     height: 100%;
-    width: 300%;
+    width: 600%;
 }
 
 .image-slide {
@@ -426,8 +426,79 @@ footer ul li a {
 
 /* Media query max 426px width */
 @media screen and (max-width: 426px) {
+    
+    /* About section */
 
+    .about {
+        width: 100%;
+        margin: 0 auto;
+        color: white;
+        background-color: #793236;
+        box-sizing: border-box;
+    }
 
+    .about-content {
+        display: block;
+    }
+
+    .column {
+        padding: 0 20px;
+        text-align: justify;
+        text-justify: auto;
+        margin: 0 auto;
+    }
+
+    .h3-about {
+        text-align: center;
+        font-size: 1em;
+        margin-top: 50px;
+    }
+
+    .cv-download {
+        display: flex;
+        align-content: center;
+    }
+
+    .cv-download a {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+
+        padding: 5px 0;
+        align-content: flex-end
+    }
+
+    .a-left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-right: 15px;
+    }
+
+    .a-right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 15px;
+    }
+
+    .cv-download a span {
+        font-size: 0.8em;
+        margin-top: 10px;
+        color: white;
+    }
+
+    .span-left {
+        margin-right: 15px;
+    }
+
+    .cv-download a span:hover {
+        text-decoration: underline;
+    }
+
+    .cv-logo {
+        width: 30%;
+    }
 
     /* Contact */
     .contact {
