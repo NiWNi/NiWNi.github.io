@@ -1,4 +1,4 @@
-# Wei´s website
+# My personal website
 
 ## Motivation
 Personal website to showcase all my work as architect and web designer and developer.
@@ -8,6 +8,6 @@ Personal website to showcase all my work as architect and web designer and devel
 http://lokeshdhakar.com/projects/lightbox2/
 
 ## License
-Website code under MIT License, exclude those parts and libraries taken from third parties, like Lightbox, wich will have their own license.
+Website code under MIT License, exclud those parts and libraries taken from third parties, like Lightbox, which will have their own license.
 Images are propietary and all original creations except from those attributed to their original owners, LA hotel by asap llpc and 
 Hangzhou hospital by beades arquitectos sap.
