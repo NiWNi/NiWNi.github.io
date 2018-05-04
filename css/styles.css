@@ -101,11 +101,6 @@ main {
     width: 250%;
 }
 
-.home .image #Clouds {
-    animation: slideshow 40s linear infinite;
-    transform: translate3d(0, 0, 0);
-}
-
 .image-slide {
     animation: slideshow 40s linear infinite;
     transform: translate3d(0, 0, 0);
@@ -120,20 +115,6 @@ main {
 #Buildings.buildings {
     transform: translateX(1000px);
     transition: 5s;
-}
-
-#Clouds.clouds {
-    animation-duration: 30s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-name: clouds;
-}
-
-#Rain.rain {
-    animation-duration: 30s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-name: rain;
 }
 
 /* Arch portfolio section */
