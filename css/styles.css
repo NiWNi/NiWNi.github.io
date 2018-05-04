@@ -82,20 +82,23 @@ nav ul li a:visited {
 
 /* Home section */
 .home {
-    height: 1200px;
+    height: 100vw;
     position: relative;
     overflow: hidden;
     box-sizing: border-box;
 }
 
 .home .image {
-    background: url(../img/skyline.svg);
-    background-repeat: no-repeat;
     position: absolute;
     left: 0;
     top: 0;
     height: 100%;
     width: 600%;
+}
+
+.home .image #Clouds {
+    animation: slideshow 40s linear infinite;
+    transform: translate3d(0, 0, 0);
 }
 
 .image-slide {
