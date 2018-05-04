@@ -1,15 +1,21 @@
-const slideImage = document.querySelector(".image");
+const slideBuildings = document.querySelector("#Buildings");
+const slideClouds = document.querySelector("#Clouds");
+const slideRain = document.querySelector("#Rain");
 
-// function checkClass() {
-//     if (slideImage.classList.contains("image-slide")) {
-//         return slideImage.classList.remove("image-slide");
-//     } else {
-//         return slideImage.classList.add("image-slide");
-//     }
-// }
+function checkClass() {
+    if (slideBuildings.classList.contains("buildings")) {
+        slideBuildings.classList.remove("buildings");
+        slideClouds.classList.remove("clouds");
+        slideRain.classList.remove("rain");
+    } else {
+        slideBuildings.classList.add("buildings");
+        slideClouds.classList.add("clouds");
+        slideRain.classList.add("rain");
+    }
+}
 
-// slideImage.addEventListener("click", checkClass);
-// slideImage.addEventListener("touch", checkClass);
+slideBuildings.addEventListener("click", checkClass);
+slideBuildings.addEventListener("touch", checkClass);
 
 // Smooth scroll jquery
 $(document).ready(function(){
