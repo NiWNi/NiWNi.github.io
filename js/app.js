@@ -4,17 +4,21 @@ const slideRain = document.querySelector("#Rain");
 
 function checkClass() {
     if (slideBuildings.classList.contains("buildings")) {
+
+        const computedStyle = window.getComputedStyle(slideBuildings);
+        slideBuildings.style.transform = computedStyle.transform;
         slideBuildings.classList.remove("buildings");
         slideClouds.classList.remove("clouds");
         slideRain.classList.remove("rain");
     } else {
+        slideBuildings.style.transform = "";
         slideBuildings.classList.add("buildings");
         slideClouds.classList.add("clouds");
         slideRain.classList.add("rain");
     }
 }
 
-slideBuildings.addEventListener("click", checkClass);
+document.querySelector(".skyline").addEventListener("click", checkClass);
 slideBuildings.addEventListener("touch", checkClass);
 
 // Smooth scroll jquery

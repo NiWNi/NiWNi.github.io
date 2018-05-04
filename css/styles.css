@@ -113,13 +113,13 @@ main {
 
 /* Skyline animation */
 
+#Buildings {
+   
+}
+
 #Buildings.buildings {
-    animation-duration: 40s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-name: buildings;
-    animation-direction: alternate;
-    animation-fill-mode: forwards;
+    transform: translateX(1000px);
+    transition: 5s;
 }
 
 #Clouds.clouds {
