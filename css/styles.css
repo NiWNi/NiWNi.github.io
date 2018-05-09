@@ -475,6 +475,95 @@ footer ul li a {
         width: 500%;
     }
 
+    /* Architecture section */
+
+    .arch {
+        width: 100%;
+    }
+    
+    .thumbnail-list {
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .thumbnail-list li {
+        box-sizing: border-box;
+        cursor: pointer;
+        position: relative;
+        border: 1px dotted black;
+        border-radius: 20px;
+        margin: 10px;
+        width: calc((1200px - 150px)/4);
+        height: calc((1200px - 150px)/4);
+    }
+    
+    .thumbnail-item:hover {
+        background-color: #793236;
+    }
+    
+    .back-side .front-side{
+        position: absolute;
+        backface-visibility: hidden;
+    }
+    
+    .back-side {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 0.80em;
+    }
+    
+    .back-side {
+        transform: rotateY(180);
+    }
+    
+    .thumbnail-image {
+        width: 200px;
+    }
+    
+    .thumbnail-item {
+        display: inline-block;
+    
+        border: 1px solid rgb(100%, 100%, 100%);
+        border: 1px solid rgba(100%, 100%, 100%, 0.8);
+    }
+
+
+    /* websites section */
+
+    .websites {
+        width: 100%;
+    }
+    
+    .websites-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .websites-item {
+        cursor: pointer;
+        position: relative;
+        display: inline-block;
+        border: 1px dotted black;
+        margin: 10px;
+        padding: 10px;
+        width: 350px;
+        height: 250px;
+        overflow: hidden;
+        border-radius: 20px;
+    }
+    
+    .websites-list li a {
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .websites-list li a img {
+        width: 100%;
+    }
+
 
 
     /* About section */
