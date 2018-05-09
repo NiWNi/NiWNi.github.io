@@ -182,6 +182,7 @@ main {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 .websites-item {
@@ -195,6 +196,7 @@ main {
     height: 250px;
     overflow: hidden;
     border-radius: 20px;
+    box-sizing: border-box;
 }
 
 .websites-list li a {
@@ -295,7 +297,9 @@ main {
 form {
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
 }
+
 .name-email {
     display: flex;
     padding: 20px 0;
@@ -311,6 +315,7 @@ input[type=text] {
     border: 1px solid black;
     padding: 11px 21px;
     width: 50%;
+    border-radius: 20px;
 }
 
 #name {
@@ -333,6 +338,7 @@ textarea {
     box-sizing: border-box;
     border: 1px solid black;
     resize: none;
+    border-radius: 20px;
 }
 
 textarea:focus {
@@ -344,10 +350,10 @@ input[type=submit] {
     padding: 10px;
     margin: 15px 0;
     border: 2px solid #793236;
-    background-color: none;
     background: none;
     font-weight: bold;
     font-size: 1em;
+    border-radius: 20px;
 }
 
 input[type=submit]:hover {
@@ -535,35 +541,15 @@ footer ul li a {
         width: 100%;
     }
     
-    .websites-list {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-    }
-    
     .websites-item {
-        cursor: pointer;
-        position: relative;
-        display: inline-block;
-        border: 1px dotted black;
-        margin: 10px;
-        padding: 10px;
-        width: 350px;
-        height: 250px;
-        overflow: hidden;
-        border-radius: 20px;
-    }
-    
-    .websites-list li a {
-        text-decoration: none;
         margin: 0;
         padding: 0;
-    }
-    
-    .websites-list li a img {
-        width: 100%;
+        width: 90%;
     }
 
+    .websites-list li + li {
+        margin-top: 20px;
+    }
 
 
     /* About section */
@@ -581,7 +567,8 @@ footer ul li a {
     }
 
     .column {
-        padding: 0 20px;
+        width: 100%;
+        padding: 0;
         text-align: justify;
         text-justify: auto;
         margin: 0 auto;
@@ -640,74 +627,38 @@ footer ul li a {
     }
 
     /* Contact */
-    .contact {
-        width: 100vw;
-    }
-    
-    form {
-        display: flex;
-        flex-direction: column;
-    }
 
-    .name-email {
-        display: flex;
-        flex-direction: column;
-        padding: 0;
+    .contact {
+        width: 100%;
+        padding: 10px;
     }
     
-    label {
-        display: none;
+    .name-email {
+        display: block;
+        padding: 20px 0 0 0;
     }
     
     input[type=text] {
-        border: 1px solid black;
-        padding: 11px 21px;
-        margin: 10px;
+        width: 100%;
     }
     
     #name {
-        width: 100%;
+        margin: 7px 0;
+        box-sizing: border-box;
     }
     
     #email {
-        width: 100vw;
-    }
-    
-    input[type=text]:focus {
-        border: 2px solid #793236;
-        box-shadow: none;
-        outline: 0;
+        margin: 7px 0;
+        box-sizing: border-box;
     }
     
     textarea {
-        width: 100%;
-        padding: 11px 21px;
-        margin: 10px;
-        box-sizing: border-box;
-        border: 1px solid black;
-        resize: none;
-    }
-    
-    textarea:focus {
-        border: 2px solid #793236;
-        outline: 0;
+        margin: 7px 0;
     }
     
     input[type=submit] {
-        width: 100%;
-        padding: 10px;
-        margin: 10px;
-        border: 2px solid #793236;
-        background-color: none;
-        background: none;
-        font-weight: bold;
-        font-size: 1em;
-    }
-    
-    input[type=submit]:hover {
         background-color: #793236;
         color: white;
-        cursor: pointer;
     }
 
     /* footer */
