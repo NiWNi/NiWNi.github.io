@@ -25,7 +25,7 @@ slideBuildings.addEventListener("touch", checkClass);
 const navBar = document.querySelector(".navigation-list");
 const circleNav = document.querySelector(".circle-nav");
 
-function showNavBar() {
+function showHideNavBar() {
   if (navBar.classList.contains("show-bar")) {
     return navBar.classList.remove("show-bar");
   } else {
@@ -33,7 +33,22 @@ function showNavBar() {
   }
 }
 
-circleNav.addEventListener("click", showNavBar);
+circleNav.addEventListener("click", showHideNavBar);
+
+// Once click on link close menu bar
+const liLinks = document.querySelectorAll(".navigation-list li");
+
+function addListenerToMenuLinks(list, event, handler) {
+  for (let i = 0; i < list.length; i++) {
+    list[i].addEventListener(event, handler);
+  }  
+}
+
+
+addListenerToMenuLinks(liLinks, "click", showHideNavBar);
+
+
+
 
 
 // Smooth scroll jquery
