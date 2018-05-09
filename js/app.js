@@ -4,8 +4,7 @@ const slideRain = document.querySelector("#Rain");
 
 function checkClass() {
     if (slideBuildings.classList.contains("buildings")) {
-
-        const computedStyle = window.getComputedStyle(slideBuildings);
+        let computedStyle = window.getComputedStyle(slideBuildings);
         slideBuildings.style.transform = computedStyle.transform;
         slideBuildings.classList.remove("buildings");
         slideClouds.classList.remove("clouds");
@@ -20,6 +19,22 @@ function checkClass() {
 
 document.querySelector(".skyline").addEventListener("click", checkClass);
 slideBuildings.addEventListener("touch", checkClass);
+
+
+// Show navigation bar on small screens
+const navBar = document.querySelector(".navigation-list");
+const circleNav = document.querySelector(".circle-nav");
+
+function showNavBar() {
+  if (navBar.classList.contains("show-bar")) {
+    return navBar.classList.remove("show-bar");
+  } else {
+    return navBar.classList.add("show-bar");
+  }
+}
+
+circleNav.addEventListener("click", showNavBar);
+
 
 // Smooth scroll jquery
 $(document).ready(function(){

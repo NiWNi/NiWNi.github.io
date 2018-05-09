@@ -72,6 +72,7 @@ nav ul li a {
 nav ul li a:hover {
     color: #793236;
     font-size: 1.1em;
+    text-decoration: underline overline black;
 }
 
 nav ul li a:visited {
@@ -86,7 +87,7 @@ main {
 }
 
 .section-titles {
-    padding: 50px 0 50px 0;
+    padding: 150px 0 10px 0;
 }
 
 /* Home section */
@@ -101,11 +102,6 @@ main {
     width: 250%;
 }
 
-.image-slide {
-    animation: slideshow 40s linear infinite;
-    transform: translate3d(0, 0, 0);
-}
-
 /* Skyline animation */
 
 #Buildings {
@@ -113,8 +109,8 @@ main {
 }
 
 #Buildings.buildings {
-    transform: translateX(1000px);
-    transition: 5s;
+    transform: translateX(-3000px);
+    transition: 40s;
 }
 
 /* Arch portfolio section */
@@ -133,14 +129,14 @@ main {
 }
 
 .thumbnail-list li {
+    box-sizing: border-box;
     cursor: pointer;
     position: relative;
     border: 1px dotted black;
     border-radius: 20px;
     margin: 10px;
-    padding: 10px;
-    width: 200px;
-    height: 200px;
+    width: calc((1200px - 150px)/4);
+    height: calc((1200px - 150px)/4);
 }
 
 .thumbnail-item:hover {
@@ -163,7 +159,7 @@ main {
 }
 
 .thumbnail-image {
-    width: 150px;
+    width: 200px;
 }
 
 .thumbnail-item {
@@ -198,6 +194,7 @@ main {
     width: 350px;
     height: 250px;
     overflow: hidden;
+    border-radius: 20px;
 }
 
 .websites-list li a {
@@ -215,13 +212,16 @@ main {
 .about {
     width: 1200px;
     margin: 0 auto;
-    color: white;
-    background-color: #793236;
     box-sizing: border-box;
 }
 
 .about-content {
     display: flex;
+    background-color: #793236;
+    border-radius: 20px;
+    padding: 20px;
+    padding-top: 100px;
+    color: white;
 }
 
 .column {
@@ -420,10 +420,36 @@ footer ul li a {
 /* Media query max 426px width */
 @media screen and (max-width: 426px) {
     
+    /* Nav bar */
+    .circle-nav {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: #793236 4px solid;
+        margin: 10px auto;
+        background-color: white;
+    }
+
+    .navigation-list {
+        display: none;
+    }
+
+    .navigation-list.show-bar {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .navigation-list li {
+        margin: 5px 0;
+    }
+
+
     /* Home section */
     .skyline {
 
     }
+
 
 
     /* About section */
