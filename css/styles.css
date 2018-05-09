@@ -424,7 +424,7 @@ footer ul li a {
 */
 
 /* Media query max 426px width */
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 721px) {
     
     /* Main header */
     .main-header {
@@ -564,6 +564,7 @@ footer ul li a {
 
     .about-content {
         display: block;
+        padding-top: 0;
     }
 
     .column {
