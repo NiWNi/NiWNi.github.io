@@ -478,7 +478,7 @@ footer ul li a {
 
     /* Home section */
     .home .skyline {
-        width: 550%;
+        width: 900%;
     }
 
     /* Architecture section */
@@ -557,9 +557,7 @@ footer ul li a {
     .about {
         width: 100%;
         margin: 0 auto;
-        color: white;
-        background-color: #793236;
-        box-sizing: border-box;
+        color: black;
     }
 
     .about-content {
@@ -567,12 +565,15 @@ footer ul li a {
         padding: 0 25px 0 25px ;
     }
 
+    .about-content div:first-child {
+        padding-top: 30px;
+    }
+
     .column {
         width: 100%;
         padding: 0;
         text-align: justify;
-        text-justify: auto;
-        margin: 0 auto;
+        text-justify: newspaper;
     }
 
     .h3-about {
