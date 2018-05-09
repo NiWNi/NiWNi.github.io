@@ -438,7 +438,7 @@ footer ul li a {
         border-radius: 50%;
         border: #793236 4px solid;
         margin: 10px auto;
-        background-color: white;
+        background-color: transparent;
     }
 
     .navigation-list {
@@ -478,7 +478,7 @@ footer ul li a {
 
     /* Home section */
     .home .skyline {
-        width: 500%;
+        width: 550%;
     }
 
     /* Architecture section */
@@ -564,7 +564,7 @@ footer ul li a {
 
     .about-content {
         display: block;
-        padding-top: 0;
+        padding: 0 25px 0 25px ;
     }
 
     .column {
