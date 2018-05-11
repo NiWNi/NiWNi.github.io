@@ -143,6 +143,10 @@ main {
     background-color: #793236;
 }
 
+.thumbnail-list li:focus {
+    background-color: aqua;
+}
+
 .back-side .front-side{
     position: absolute;
     backface-visibility: hidden;
