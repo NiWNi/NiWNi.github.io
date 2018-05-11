@@ -99,16 +99,42 @@ main {
 }
 
 .home .skyline {
-    width: 250%;
+    width: 300%;
 }
 
 /* Skyline animation */
 
-#Buildings {
-   
+#Buildings.buildings {
+    transform: translateX(-3000px);
+    transition: 40s;
 }
 
-#Buildings.buildings {
+#Cloud1 {
+    transform: translateX(100px);
+    transition: 100s;
+}
+
+#Cloud2 {
+    transform: translateX(-3000px);
+    transition: 40s;
+}
+
+#Cloud3 {
+    transform: translateX(-3000px);
+    transition: 40s;
+}
+
+#Cloud4 {
+    transform: translateX(-3000px);
+    transition: 40s;
+}
+
+#Cloud5 {
+    transform: translateX(-3000px);
+    transition: 40s;
+}
+
+#Cloud6 {
     transform: translateX(-3000px);
     transition: 40s;
 }
