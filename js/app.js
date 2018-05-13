@@ -1,6 +1,7 @@
 const slideBuildings = document.querySelector("#Buildings");
 const slideClouds = document.querySelector("#Clouds");
 const slideRain = document.querySelector("#Rain");
+const cloudFive = document.querySelector("#Cloud5");
 
 function checkClass() {
     if (slideBuildings.classList.contains("buildings")) {
@@ -9,11 +10,13 @@ function checkClass() {
         slideBuildings.classList.remove("buildings");
         slideClouds.classList.remove("clouds");
         slideRain.classList.remove("rain");
+        cloudFive.classList.remove(".clouds");
     } else {
         slideBuildings.style.transform = "";
         slideBuildings.classList.add("buildings");
         slideClouds.classList.add("clouds");
         slideRain.classList.add("rain");
+        cloudFive.classList.add("clouds");
     }
 }
 

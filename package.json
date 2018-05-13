@@ -1,0 +1,25 @@
+{
+  "name": "niweini.github.io",
+  "version": "1.0.0",
+  "description": "Personal website to showcase all my work as architect and web designer and developer.",
+  "main": "index.js",
+  "dependencies": {
+    "lightbox2": "^2.10.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NiWeiNi/NiWeiNi.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NiWeiNi/NiWeiNi.github.io/issues"
+  },
+  "homepage": "https://github.com/NiWeiNi/NiWeiNi.github.io#readme"
+}
