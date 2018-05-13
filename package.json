@@ -4,10 +4,12 @@
   "description": "Personal website to showcase all my work as architect and web designer and developer.",
   "main": "index.js",
   "dependencies": {
+    "gulp-sass": "^4.0.1",
     "lightbox2": "^2.10.0"
   },
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
