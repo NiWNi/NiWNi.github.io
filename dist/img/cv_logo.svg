@@ -1,1 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55 55"><path d="M47.7 9.3H19.4v45.1h34.7V15.6l-6.4-6.3zM22.4 51.4V12.3h23.7v4.8h5v34.3H22.4z" fill="#fff"/><path fill="none" stroke="#fff" stroke-width="4" stroke-miterlimit="10" d="M36.8 25.9V32"/><path fill="#fff" stroke="#fff" stroke-miterlimit="10" d="M32.8 30.8l4 6.9 4-6.9z"/><path fill="none" stroke="#fff" stroke-width="2" stroke-miterlimit="10" d="M32.1 39.9h9.4"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 55 55" style="enable-background:new 0 0 55 55;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-width:4;stroke-miterlimit:10;}
+	.st2{fill:#FFFFFF;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
+</style>
+<g>
+	<path class="st0" d="M47.7,9.3H19.4v45.1h34.7V15.6L47.7,9.3z M22.4,51.4V12.3h23.7v4.8h5v34.3H22.4z"/>
+	<g>
+		<g>
+			<line class="st1" x1="36.8" y1="25.9" x2="36.8" y2="32"/>
+			<g>
+				<polygon class="st2" points="32.8,30.8 36.8,37.7 40.8,30.8 				"/>
+			</g>
+		</g>
+	</g>
+	<line class="st3" x1="32.1" y1="39.9" x2="41.5" y2="39.9"/>
+</g>
+</svg>

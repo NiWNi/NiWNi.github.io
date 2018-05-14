@@ -1,1 +1,51 @@
-<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 250"><style>.st1{fill:#231f20}</style><path d="M29.6 128.1v-12.3h29.2v24.3zm31.9 13.3v-14.7h14.3v20.8zm17 7.1V127h13.9v27.8zm22.5-22.2h14.4v19.3H101zm17 0v19.3h14.5v-19.3zm-14.5 32.4h11.7v5.3zm14.8 6.3v-6.3h14.1v12zm39.6-38.1h13.2v18.6h-13.2zm16.1 0h13.2v18.5H174zm24.6 19.1H190v-19.3h15.5v-10.6h6.3l-11.8 47h-10.2v-4.2h8.8zm-57.3-19h13.8v18.5h-13.8zm0 31.9h13.8v4.2h-13.8zm16.6 0h13.2v4.2h-13.2zm16 0h13.2v4.2h-13.2z" fill="none" stroke="#793236" stroke-width="1.5"/><path class="st1" d="M29 88.4h64.1v16.9H29zm71.4 0h7.4v16.9h-7.4zm8.6 0h24.2v16.9H109zm31.6 5.5h64.1v11.4h-64.1zm65.6-4.9h6.5v16.3h-6.5z"/><path class="st1" d="M140.6 88.4h72v4.2h-72zm48.9 27h14v9.3h-14zm-16.2 0h14.5v9.3h-14.5zm-16 0h14.5v9.3h-14.5zm-39.9 0H133v9.3h-15.6zm-17 0h15.7v9.3h-15.7zm-22.6 0h15.3v9.3H77.8zm-16.8 0h15.3v9.3H61zm79.6 0h15.1v9.3h-15.1zm32.7 32.1h14.5v9.3h-14.5zm-16 0h14.5v9.3h-14.5zm-16.7 0h15.1v9.3h-15.1zm-23 0h15.5v9.3h-15.5zm-17.2 0h15.5v9.3h-15.5zm88.7 0h7.4v9.3h-7.4z"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 250 250" style="enable-background:new 0 0 250 250;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#793236;stroke-width:1.5;}
+	.st1{fill:#231F20;}
+</style>
+<polygon class="st0" points="29.6,128.1 29.6,115.8 58.8,115.8 58.8,140.1 "/>
+<polygon class="st0" points="61.5,141.4 61.5,126.7 75.8,126.7 75.8,147.5 "/>
+<polygon class="st0" points="78.5,148.5 78.5,127 92.4,127 92.4,154.8 "/>
+<rect x="101" y="126.3" class="st0" width="14.4" height="19.3"/>
+<path class="st0" d="M101,145.6"/>
+<path class="st0" d="M97.1,112.6"/>
+<polygon class="st0" points="118,126.3 118,145.6 132.5,145.6 132.5,126.3 "/>
+<polygon class="st0" points="103.5,158.7 115.2,158.7 115.2,164 "/>
+<polygon class="st0" points="118.3,165 118.3,158.7 132.4,158.7 132.4,170.7 "/>
+<rect x="157.9" y="126.9" class="st0" width="13.2" height="18.6"/>
+<path class="st0" d="M157.9,145.5"/>
+<rect x="174" y="126.9" class="st0" width="13.2" height="18.5"/>
+<path class="st0" d="M174,145.3"/>
+<polygon class="st0" points="198.6,146 190,146 190,126.7 205.5,126.7 205.5,116.1 211.8,116.1 200,163.1 189.8,163.1 189.8,158.9 
+	198.6,158.9 "/>
+<rect x="141.3" y="127" class="st0" width="13.8" height="18.5"/>
+<rect x="141.3" y="158.9" class="st0" width="13.8" height="4.2"/>
+<path class="st0" d="M141.3,158.9"/>
+<rect x="157.9" y="158.9" class="st0" width="13.2" height="4.2"/>
+<path class="st0" d="M157.9,158.9"/>
+<rect x="173.9" y="158.9" class="st0" width="13.2" height="4.2"/>
+<path class="st0" d="M173.9,158.9"/>
+<rect x="29" y="88.4" class="st1" width="64.1" height="16.9"/>
+<rect x="100.4" y="88.4" class="st1" width="7.4" height="16.9"/>
+<rect x="109" y="88.4" class="st1" width="24.2" height="16.9"/>
+<rect x="140.6" y="93.9" class="st1" width="64.1" height="11.4"/>
+<rect x="206.2" y="89" class="st1" width="6.5" height="16.3"/>
+<rect x="140.6" y="88.4" class="st1" width="72" height="4.2"/>
+<rect x="189.5" y="115.4" class="st1" width="14" height="9.3"/>
+<rect x="173.3" y="115.4" class="st1" width="14.5" height="9.3"/>
+<rect x="157.3" y="115.4" class="st1" width="14.5" height="9.3"/>
+<rect x="117.4" y="115.4" class="st1" width="15.6" height="9.3"/>
+<rect x="100.4" y="115.4" class="st1" width="15.7" height="9.3"/>
+<rect x="77.8" y="115.4" class="st1" width="15.3" height="9.3"/>
+<rect x="61" y="115.4" class="st1" width="15.3" height="9.3"/>
+<rect x="140.6" y="115.4" class="st1" width="15.1" height="9.3"/>
+<rect x="173.3" y="147.5" class="st1" width="14.5" height="9.3"/>
+<rect x="157.3" y="147.5" class="st1" width="14.5" height="9.3"/>
+<rect x="140.6" y="147.5" class="st1" width="15.1" height="9.3"/>
+<rect x="117.6" y="147.5" class="st1" width="15.5" height="9.3"/>
+<rect x="100.4" y="147.5" class="st1" width="15.5" height="9.3"/>
+<rect x="189.1" y="147.5" class="st1" width="7.4" height="9.3"/>
+</svg>
