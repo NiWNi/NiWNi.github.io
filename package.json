@@ -4,12 +4,15 @@
   "description": "Personal website to showcase all my work as architect and web designer and developer.",
   "main": "index.js",
   "dependencies": {
+    "gulp-eslint": "^4.0.2",
     "gulp-sass": "^4.0.1",
     "lightbox2": "^2.10.0"
   },
   "devDependencies": {
+    "browser-sync": "^2.24.4",
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^5.0.0"
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-jasmine-phantom": "^3.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
