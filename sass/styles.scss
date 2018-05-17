@@ -42,11 +42,22 @@ margin: 0;
 
 /* Navigation bar */
 
-.navigation-bar {
+.main-header {
+    display: grid;
     position: fixed;
-    width: 100%;
     background-color: rgba(255, 255, 255, 0.925);
     z-index: 1;
+}
+
+.navigation-bar {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr auto 1fr;
+    grid-row: 2 /span 1;
+}
+
+.navigation-bar a {
+    grid-column: 2 / span 1;
 }
 
 .logo {
@@ -59,21 +70,33 @@ margin: 0;
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    border: #793236 4px solid;
+    border: var(--scarlet) 5px solid;
     margin: 10px auto;
     background-color: transparent;
+    grid-column: 2 / span 1;
 }
 
 .navigation-list {
-    list-style-type: none;
-    text-align: center;
+    grid-row: 1;
+    align-items: center;
+    display: flex;
 }
 
-.navigation-list li {
-    display: inline;
+.navigation-list-left {
+    grid-column: 1 / span 1;
+    justify-content: flex-end;
 }
 
-nav ul li a {
+.navigation-list-right {
+    grid-column: 3 / span 1;
+}
+
+.navigation-list-left div,
+.navigation-list-right div {
+    padding: 0 15px;
+}
+
+.navigation-bar div * {
     font-size: 1.1em;
     text-decoration: none;
     color: black;
@@ -81,12 +104,12 @@ nav ul li a {
     margin: 0 12px;
 }
 
-nav ul li a:hover {
+.navigation-bar div *:hover {
     text-shadow: none;
     border-bottom: 2px solid var(--scarlet);
 }
 
-nav ul li a:visited {
+.navigation-bar div *:visited {
     font-weight: bold;
 }
 
@@ -168,9 +191,10 @@ main {
     padding: 0px;
     margin: 0px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 30px;
-}
+}   
 
 .thumbnail-list li {
     cursor: pointer;
@@ -178,10 +202,6 @@ main {
     border: 1px dotted black;
     border-radius: 20px;
     padding: 20px;
-}
-
-.thumbnail-item:hover {
-    background-color: #793236;
 }
 
 .thumbnail-list li:focus {
@@ -199,10 +219,6 @@ main {
     font-size: 0.80em;
 }
 
-.back-side {
-    transform: rotateY(180);
-}
-
 .thumbnail-image {
     width: 100%;
 }
@@ -214,6 +230,31 @@ main {
     border: 1px solid rgba(100%, 100%, 100%, 0.8);
 }
 
+.arch-overlay{
+    background: #860d0da6;
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    position: relative;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    transition: 0.3s;
+    transform: translateY(100%);
+  }
+
+  .arch-overlay button {
+    background: none;
+    border: 2px solid white;
+    color: white;
+    text-transform: uppercase;
+    background: rgba(0, 0, 0, 0.116);
+    padding: 5px;
+  }
+
+  .thumbnail-item:hover .arch-overlay {
+    transform: translateY(0);
+  }
+
 /* Websites section */
 
 .websites {
@@ -224,8 +265,8 @@ main {
     list-style-type: none;
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    padding: 0%;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding: 0;
 }
 
 .websites-item {
@@ -236,6 +277,7 @@ main {
     overflow: hidden;
     border-radius: 20px;
     box-sizing: border-box;
+    padding: 10px;
 }
 
 .websites-list li a {
@@ -256,7 +298,7 @@ main {
 
 .about-content {
     display: flex;
-    background-color: #793236;
+    background-color:var(--scarlet);
     border-radius: 20px;
     padding: 20px;
     padding-top: 100px;
@@ -363,7 +405,7 @@ input[type=text] {
 }
 
 input[type=text]:focus {
-    border: 2px solid #793236;
+    border: 2px solidvar(--scarlet);
     box-shadow: none;
     outline: 0;
 }
@@ -378,14 +420,14 @@ textarea {
 }
 
 textarea:focus {
-    border: 2px solid #793236;
+    border: 2px solidvar(--scarlet);
     outline: 0;
 }
 
 input[type=submit] {
     padding: 10px;
     margin: 15px 0;
-    border: 2px solid #793236;
+    border: 2px solidvar(--scarlet);
     background: none;
     font-weight: bold;
     font-size: 1em;
@@ -393,7 +435,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #793236;
+    background-color:var(--scarlet);
     color: white;
     cursor: pointer;
 }
@@ -444,12 +486,12 @@ footer ul li a {
 }
 
 .w-logo {
-    color: #793236;
+    color:var(--scarlet);
 }
 
 .typewrite {
     font-weight: bold;
-    color: #793236;
+    color:var(--scarlet);
 }
 
 /*
@@ -472,7 +514,7 @@ footer ul li a {
         width: 20px;
         height: 20px;
         border-radius: 50%;
-        border: #793236 4px solid;
+        border:var(--scarlet) 4px solid;
         margin: 10px auto;
         background-color: transparent;
     }
