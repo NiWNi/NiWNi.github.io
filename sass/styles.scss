@@ -43,10 +43,14 @@ margin: 0;
 /* Navigation bar */
 
 .main-header {
+    width: 100%;
     display: grid;
     position: fixed;
+    margin: 0 auto;
     background-color: rgba(255, 255, 255, 0.925);
     z-index: 1;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 .navigation-bar {
