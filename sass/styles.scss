@@ -503,10 +503,8 @@ footer ul {
     margin-top: 5px;
 }
 
-footer ul li {
-    padding: 0 18px;
-    min-width: 25px;
-    max-width: 25px;
+footer ul li:nth-child(2) {
+    padding: 0 20px;
 }
 
 footer ul li a {
