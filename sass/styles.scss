@@ -1,11 +1,11 @@
 /* Import font icons */
 @font-face {
     font-family: "brands";
-    src: url("../fonts/fa-brands-400.eot");
-    src: url("../fonts/fa-brands-400.eot?#iefix") format("embedded-opentype"),
-        url("../fonts/fa-brands-400.woff") format("woff"),
-        url("../fonts/fa-brands-400.ttf") format("truetype"),
-        url("../fonts/fa-brands-400.svg#brands") format("svg");
+    src: url("./fonts/fa-brands-400.eot");
+    src: url("./fonts/fa-brands-400.eot?#iefix") format("embedded-opentype"),
+        url("./fonts/fa-brands-400.woff") format("woff"),
+        url("./fonts/fa-brands-400.ttf") format("truetype"),
+        url("./fonts/fa-brands-400.svg#brands") format("svg");
         font-weight: normal;
         font-style: normal;
 }
@@ -116,6 +116,7 @@ margin: 0;
 @keyframes beat{
 	to { transform: scale(1.2); }
 }
+
 /* Main grid for rest of sections */
 
 main {
@@ -543,121 +544,65 @@ footer ul li a {
 *
 */
 
-/* Media query max 426px width */
-@media screen and (max-width: 721px) {
-    
-    /* Main header */
-    .main-header {
-        background-color: rgba(255, 255, 255, 0.63);
-    }
+/* Media query max 2048px width */
+
+@media screen and (max-width: 1024px) {
 
     /* Nav bar */
+
+    .navigation-bar {
+        display: block;
+    }
+
+    .navigation-bar div div {
+        padding: 10px;
+    }
+
     .circle-nav {
-        width: 20px;
-        height: 20px;
+        width: 30px;
+        height: 30px;
         border-radius: 50%;
-        border:var(--scarlet) 4px solid;
-        margin: 10px auto;
-        background-color: transparent;
+        transition: 1s ease;
+    }
+
+    .circle-nav:hover {
+        transform: scale(1.1);
+        border-radius: 0%;
     }
 
     .navigation-list {
         display: none;
     }
 
+    .navigation-list-left {
+        padding-top: 10px;
+    }
+
     .navigation-list.show-bar {
         display: flex;
         flex-direction: column;
-        margin-top: 30px;
-        background-color: rgb(255, 255, 255);
-        padding: 20px;
-        border-radius: 20px;
-        border: #793236 1px dotted;
     }
 
     /* Home section */
     .home .skyline {
-        width: 900%;
+        width: 600%;
     }
 
     /* Architecture section */
 
-    .arch {
-        width: 100%;
-    }
-    
     .thumbnail-list {
-        list-style: none;
-        padding: 0px;
-        margin: 0px;
-    }
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }      
     
-    .thumbnail-list li {
-        box-sizing: border-box;
-        cursor: pointer;
-        position: relative;
-        border: 1px dotted black;
-        border-radius: 20px;
-        margin: 10px;
-        width: calc((1200px - 150px)/4);
-        height: calc((1200px - 150px)/4);
-    }
-    
-    .thumbnail-item:hover {
-        background-color: #793236;
-    }
-    
-    .back-side .front-side{
-        position: absolute;
-        backface-visibility: hidden;
-    }
-    
-    .back-side {
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 0.80em;
-    }
-    
-    .back-side {
-        transform: rotateY(180);
-    }
-    
-    .thumbnail-image {
-        width: 200px;
-    }
-    
-    .thumbnail-item {
-        display: inline-block;
-    
-        border: 1px solid rgb(100%, 100%, 100%);
-        border: 1px solid rgba(100%, 100%, 100%, 0.8);
-    }
-
-
     /* websites section */
-
-    .websites {
-        width: 100%;
-    }
     
-    .websites-item {
-        margin: 0;
-        padding: 0;
-        width: 90%;
+    .websites-list {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
     }
-
-    .websites-list li + li {
-        margin-top: 20px;
-    }
-
 
     /* About section */
-
-    .about {
-        width: 100%;
-        margin: 0 auto;
-        color: black;
-    }
 
     .about-content {
         display: block;
@@ -668,17 +613,14 @@ footer ul li a {
         padding-top: 30px;
     }
 
+    .about-content div:last-child {
+        padding-bottom: 30px;
+    }
+
     .column {
         width: 100%;
         padding: 0;
         text-align: justify;
-        text-justify: newspaper;
-    }
-
-    .h3-about {
-        text-align: center;
-        font-size: 1em;
-        margin-top: 50px;
     }
 
     .cv-download {
@@ -686,53 +628,7 @@ footer ul li a {
         align-content: center;
     }
 
-    .cv-download a {
-        display: flex;
-        flex-direction: column;
-        text-decoration: none;
-
-        padding: 5px 0;
-        align-content: flex-end
-    }
-
-    .a-left {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        margin-right: 15px;
-    }
-
-    .a-right {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-left: 15px;
-    }
-
-    .cv-download a span {
-        font-size: 0.8em;
-        margin-top: 10px;
-        color: white;
-    }
-
-    .span-left {
-        margin-right: 15px;
-    }
-
-    .cv-download a span:hover {
-        text-decoration: underline;
-    }
-
-    .cv-logo {
-        width: 30%;
-    }
-
     /* Contact */
-
-    .contact {
-        width: 100%;
-        padding: 10px;
-    }
     
     .name-email {
         display: block;
@@ -761,11 +657,65 @@ footer ul li a {
         background-color: var(--scarlet);
         color: white;
     }
-
-    /* footer */
-
 }
 
+/* Media query max 1024px width */
+
+@media screen and (max-width: 1024px) {
+
+    /* Home section */
+    .home .skyline {
+        width: 400%;
+    }
+
+    /* Architecture section */
+
+    .thumbnail-list {
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 30px;
+    }
+
+    /* Websites section */
+
+    .websites-list {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+}
+
+/* Media query max 741px width */
+
+@media screen and (max-width: 741px) {
+
+    /* Home section */
+    .home .skyline {
+        width: 600%;
+    }
+
+    /* Architecture section */
+
+    .thumbnail-list {
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 30px;
+    }      
+}
+
+/* Media query max 471px width */
+
+@media screen and (max-width: 471px) {
+
+    /* Home section */
+    .home .skyline {
+        width: 900%;
+    }
+
+    /* Architecture section */
+
+    .thumbnail-list {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }      
+}
 
 
 
