@@ -1,7 +1,7 @@
 @font-face {
   font-family: "brands";
-  src: url("./fonts/fa-brands-400.eot");
-  src: url("./fonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("./fonts/fa-brands-400.woff") format("woff"), url("./fonts/fa-brands-400.ttf") format("truetype"), url("./fonts/fa-brands-400.svg#brands") format("svg");
+  src: url("../fonts/fa-brands-400.eot");
+  src: url("../fonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-brands-400.woff") format("woff"), url("../fonts/fa-brands-400.ttf") format("truetype"), url("../fonts/fa-brands-400.svg#brands") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -602,12 +602,18 @@ footer ul li a {
     width: 600%; }
   .thumbnail-list {
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 30px; } }
+    grid-gap: 30px; }
+  .websites-list {
+    grid-template-columns: 1fr;
+    grid-gap: 10px; } }
 
 @media screen and (max-width: 471px) {
   .home .skyline {
     width: 900%; }
   .thumbnail-list {
+    grid-template-columns: 1fr;
+    grid-gap: 10px; }
+  .websites-list {
     grid-template-columns: 1fr;
     grid-gap: 10px; } }
 
