@@ -19,8 +19,7 @@ html {
           box-sizing: border-box;
   font-family: Montserrat, Verdana, Tahoma, Sans-Serif;
   font-weight: normal;
-  color: black;
-  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07); }
+  color: black; }
 
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
@@ -81,11 +80,9 @@ body {
 .navigation-list-right {
   grid-column: 3 / span 1; }
 
-.navigation-list-left div, .navigation-list-right div {
-  padding: 0 15px; }
-
 .navigation-bar div * {
   font-size: 1.1em;
+  font-weight: bold;
   text-decoration: none;
   color: black;
   padding: 0;
@@ -93,7 +90,7 @@ body {
 
 .navigation-bar div *:hover {
   text-shadow: none;
-  border-bottom: 2px solid var(--scarlet); }
+  border-bottom: 3px solid var(--scarlet); }
 
 .navigation-bar div *:visited {
   font-weight: bold; }
@@ -104,7 +101,8 @@ main {
   grid-template-columns: 15fr 80fr 15fr; }
 
 .section-titles {
-  padding: 150px 0 10px 0; }
+  text-align: center;
+  padding: 170px 0 10px 0; }
 
 .home {
   height: 100%;
@@ -166,7 +164,6 @@ main {
   transition: 40s; }
 
 .arch {
-  text-align: center;
   grid-column: 2 / -2; }
 
 .thumbnail-list {
@@ -174,16 +171,16 @@ main {
   padding: 0px;
   margin: 0px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  grid-template-rows: repeat(3, minmax(200px, 1fr));
   grid-gap: 30px; }
 
 .thumbnail-list li {
   cursor: pointer;
-  position: relative;
   border: 1px dotted black;
   border-radius: 20px;
-  padding: 20px; }
+  padding: 20px;
+  position: relative; }
 
 .thumbnail-list li:focus {
   background-color: aqua; }
@@ -194,12 +191,17 @@ main {
           backface-visibility: hidden; }
 
 .back-side {
+  display: inline-block;
   text-align: center;
   text-transform: uppercase;
-  font-size: 0.80em; }
+  font-size: 0.80em;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease; }
 
 .thumbnail-image {
-  width: 100%; }
+  width: 100%;
+  -webkit-transition: 1s ease;
+  transition: 1s ease; }
 
 .thumbnail-item {
   display: inline-block;
@@ -207,31 +209,44 @@ main {
   border: 1px solid rgba(255, 255, 255, 0.8); }
 
 .arch-overlay {
-  background: #860d0da6;
-  grid-column: 1 / -1;
-  grid-row: 1 / -1;
-  position: relative;
-  display: grid;
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%); }
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  border-radius: 20px;
+  -webkit-transition: 1s ease;
+  transition: 1s ease; }
+
+.thumbnail-list li:hover {
+  border: 2px solid black; }
+
+.thumbnail-list li:hover .arch-overlay {
+  opacity: 1; }
+
+.thumbnail-list li:hover .thumbnail-image {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4); }
+
+.thumbnail-list li:hover .back-side {
+  border-bottom: 1.5px solid var(--scarlet); }
 
 .arch-overlay button {
-  background: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
   border: 2px solid white;
   color: white;
   text-transform: uppercase;
-  background: rgba(0, 0, 0, 0.116);
-  padding: 5px; }
-
-.thumbnail-item:hover .arch-overlay {
-  -webkit-transform: translateY(0);
-          transform: translateY(0); }
+  background: var(--scarlet);
+  font-size: 1em;
+  padding: 10px;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
 
 .websites {
   grid-column: 2 / -2; }
@@ -239,13 +254,12 @@ main {
 .websites-list {
   list-style-type: none;
   display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 30px;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
   padding: 0; }
 
 .websites-item {
   cursor: pointer;
-  position: relative;
   display: inline-block;
   border: 1px dotted black;
   overflow: hidden;
@@ -649,7 +663,7 @@ footer ul li a {
   textarea {
     margin: 7px 0; }
   input[type=submit] {
-    background-color: #793236;
+    background-color: var(--scarlet);
     color: white; } }
 
 html.lb-disable-scrolling {
