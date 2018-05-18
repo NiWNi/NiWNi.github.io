@@ -94,24 +94,28 @@ margin: 0;
     grid-column: 3 / span 1;
 }
 
-.navigation-bar div * {
+.navigation-bar div a {
     font-size: 1.1em;
-    font-weight: bold;
     text-decoration: none;
     color: black;
     padding: 0;
     margin: 0 12px;
+    transition: 0.4s ease;
 }
 
-.navigation-bar div *:hover {
-    text-shadow: none;
-    border-bottom: 3px solid var(--scarlet);
-}
-
-.navigation-bar div *:visited {
+.navigation-bar div a:hover {
     font-weight: bold;
+    border-bottom: 3px solid var(--scarlet);
+    text-shadow: none;
 }
 
+.logo:hover {
+    animation: beat 0.7s infinite alternate;
+}
+
+@keyframes beat{
+	to { transform: scale(1.2); }
+}
 /* Main grid for rest of sections */
 
 main {
@@ -248,7 +252,7 @@ main {
 }
 
 .thumbnail-list li:hover {
-    border: 2px solid black;
+    border: 1px solid black;
 }
 
 .thumbnail-list li:hover .arch-overlay {
@@ -298,17 +302,35 @@ main {
     overflow: hidden;
     border-radius: 20px;
     box-sizing: border-box;
-    padding: 10px;
+    padding: 20px;
 }
 
-.websites-list li a {
+.websites-item a img {
     text-decoration: none;
     margin: 0;
-    padding: 0;
+    padding-bottom: 10px;
+    transition: 1s ease;
+    width: 100%;
 }
 
-.websites-list li a img {
-    width: 100%;
+.website-name {
+    display: inline-block;
+    transition: 0.5s ease;
+}
+
+.websites-list li:hover {
+    border: 1px solid black;
+}
+
+.websites-list li:hover .website-name {
+    border-bottom: 1.5px solid var(--scarlet);
+    background: rgba(255, 255, 255, 0.8);
+    position: relative;
+    z-index: 1000;
+}
+
+.websites-item:hover a img {
+    transform: scale(1.4);
 }
 
 /* About section */
@@ -319,10 +341,9 @@ main {
 
 .about-content {
     display: flex;
-    background-color:var(--scarlet);
+    background-color: var(--scarlet);
     border-radius: 20px;
-    padding: 20px;
-    padding-top: 100px;
+    padding: 100px 20px 20px 20px;
     color: white;
 }
 
@@ -426,7 +447,7 @@ input[type=text] {
 }
 
 input[type=text]:focus {
-    border: 2px solidvar(--scarlet);
+    border: 2px solid var(--scarlet);
     box-shadow: none;
     outline: 0;
 }
@@ -441,14 +462,14 @@ textarea {
 }
 
 textarea:focus {
-    border: 2px solidvar(--scarlet);
+    border: 2px solid var(--scarlet);
     outline: 0;
 }
 
 input[type=submit] {
     padding: 10px;
     margin: 15px 0;
-    border: 2px solidvar(--scarlet);
+    border: 2px solid var(--scarlet);
     background: none;
     font-weight: bold;
     font-size: 1em;
@@ -456,7 +477,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color:var(--scarlet);
+    background-color: var(--scarlet);
     color: white;
     cursor: pointer;
 }
@@ -553,27 +574,6 @@ footer ul li a {
         border-radius: 20px;
         border: #793236 1px dotted;
     }
-
-    .navigation-list li {
-        margin: 5px 0;
-    }
-
-    .navigation-list li:nth-child(3) {
-        order: 1;
-    }
-
-    .navigation-list li:nth-child(2) {
-        order: 2;
-    }
-
-    .navigation-list li:nth-child(1) {
-        order: 3;
-    }
-
-    .navigation-list li:nth-child(4) {
-        order: 4;
-    }
-
 
     /* Home section */
     .home .skyline {
