@@ -285,10 +285,9 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: var(--scarlet);
+  border: 1px dotted black;
   border-radius: 20px;
-  padding: 100px 20px 20px 20px;
-  color: white; }
+  padding: 100px 20px 20px 20px; }
 
 .column {
   width: 50%;
