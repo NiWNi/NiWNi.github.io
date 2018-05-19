@@ -3,25 +3,32 @@ const slideClouds = document.querySelector('#Clouds');
 const slideRain = document.querySelector('#Rain');
 const cloudFive = document.querySelector('#Cloud5');
 
-function checkClass() {
-	if (slideBuildings.classList.contains('buildings')) {
-		let computedStyle = window.getComputedStyle(slideBuildings);
-		slideBuildings.style.transform = computedStyle.transform;
-		slideBuildings.classList.remove('buildings');
-		slideClouds.classList.remove('clouds');
-		slideRain.classList.remove('rain');
-		cloudFive.classList.remove('clouds');
-	} else {
-		slideBuildings.style.transform = '';
-		slideBuildings.classList.add('buildings');
-		slideClouds.classList.add('clouds');
-		slideRain.classList.add('rain');
-		cloudFive.classList.add('clouds');
-	}
-}
 
-document.querySelector('.skyline').addEventListener('click', checkClass);
-slideBuildings.addEventListener('touch', checkClass);
+// Animate logo
+
+TweenMax.fromTo(".stlog0", 2, {drawSVG:"0%"}, {drawSVG: "100%"});
+
+// TweenMax.to(".svg-moving", 20, {left:-600});
+
+// function checkClass() {
+// 	if (slideBuildings.classList.contains('buildings')) {
+// 		let computedStyle = window.getComputedStyle(slideBuildings);
+// 		slideBuildings.style.transform = computedStyle.transform;
+// 		slideBuildings.classList.remove('buildings');
+// 		slideClouds.classList.remove('clouds');
+// 		slideRain.classList.remove('rain');
+// 		cloudFive.classList.remove('clouds');
+// 	} else {
+// 		slideBuildings.style.transform = '';
+// 		slideBuildings.classList.add('buildings');
+// 		slideClouds.classList.add('clouds');
+// 		slideRain.classList.add('rain');
+// 		cloudFive.classList.add('clouds');
+// 	}
+// }
+
+// document.querySelector('.skyline').addEventListener('click', checkClass);
+// slideBuildings.addEventListener('touch', checkClass);
 
 // Show navigation bar on small screens
 const navBar = document.querySelectorAll('.navigation-list');
@@ -45,12 +52,19 @@ circleNav.addEventListener('click', showHideNavBar);
 
 
 // Once click on link close menu bar
-const liLinks = document.querySelectorAll('.navigation-list li');
+const liLinks = document.querySelectorAll('.navigation-list div');
 
 function addListenerToMenuLinks(list, event, handler) {
 	for (let i = 0; i < list.length; i++) {
 		list[i].addEventListener(event, handler);
 	}
+}
+
+// Function to close nav bar once clicked on link
+function closeCirNavBar() {
+  if (navBar[0].classList.contains('show-bar')) {
+    navBar[0].classList.remove('show-bar');
+  }
 }
 
 addListenerToMenuLinks(liLinks, 'click', showHideNavBar);
