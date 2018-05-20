@@ -54,24 +54,6 @@ body {
   display: block;
   margin: 30px auto 20px auto; }
 
-.stlog0 {
-  stroke-dasharray: 0;
-  stroke-dashoffset: 0;
-  -webkit-animation: dash 5s linear;
-          animation: dash 5s linear; }
-
-@-webkit-keyframes dash {
-  from {
-    stroke-dashoffset: 1000; }
-  to {
-    stroke-dashoffset: 0; } }
-
-@keyframes dash {
-  from {
-    stroke-dashoffset: 1000; }
-  to {
-    stroke-dashoffset: 0; } }
-
 .circle-nav {
   width: 25px;
   height: 25px;
@@ -145,7 +127,30 @@ main {
   grid-column: 1 /-1; }
 
 .home .skyline {
-  width: 300%; }
+  width: 300%;
+  position: relative; }
+
+#Buildings {
+  position: relative;
+  -webkit-animation: buildings 5s alternate infinite;
+          animation: buildings 5s alternate infinite; }
+
+@-webkit-keyframes buildings {
+  from {
+    left: 0px; }
+  to {
+    left: 500px; } }
+
+@keyframes buildings {
+  from {
+    left: 0px; }
+  to {
+    left: 500px; } }
+
+#Cloud2 {
+  position: relative;
+  -webkit-animation: buildings 5s alternate infinite;
+          animation: buildings 5s alternate infinite; }
 
 .arch {
   grid-column: 2 / -2; }
@@ -208,29 +213,12 @@ main {
 .thumbnail-list li:hover {
   border: 1px solid black; }
 
-.thumbnail-list li:hover .arch-overlay {
-  opacity: 1; }
-
 .thumbnail-list li:hover .thumbnail-image {
   -webkit-transform: scale(1.4);
           transform: scale(1.4); }
 
 .thumbnail-list li:hover .back-side {
   border-bottom: 1.5px solid var(--scarlet); }
-
-.arch-overlay button {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  border: 2px solid white;
-  color: white;
-  text-transform: uppercase;
-  background: var(--scarlet);
-  font-size: 1em;
-  padding: 10px;
-  text-align: center;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%); }
 
 .websites {
   grid-column: 2 / -2; }

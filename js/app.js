@@ -5,6 +5,40 @@ const cloudFive = document.querySelector('#Cloud5');
 
 
 // Animate logo
+document.onload = animateLogo();
+
+// Function snippet taken from https://jakearchibald.com/2013/animated-line-drawing-svg/
+function aniPath(pathFromArray) {
+	const path = pathFromArray;
+	const length = path.getTotalLength();
+	// Clear previous transition
+	path.style.transition = path.style.WebkitTransition =
+	'none';
+	// Set up the starting positions
+	path.style.strokeDasharray = length + ' ' + length;
+	path.style.strokeDashoffset = length;
+	// Trigger a layout so styles are calculated & the browser
+	// picks up the starting position before animating
+	path.getBoundingClientRect();
+	// Define our transition
+	path.style.transition = path.style.WebkitTransition =
+	'stroke-dashoffset 3s ease-in-out';
+	// Animate
+	path.style.strokeDashoffset = '0';
+}
+
+// Function to animate entire logo
+function animateLogo() {
+	const firstN = document.querySelectorAll('.stlog0')[1];
+	const secondN = document.querySelectorAll('.stlog0')[0];
+	const w = document.querySelectorAll('.stlog1')[0];
+	const wLine = document.querySelectorAll('.stlog1')[1];
+	aniPath(firstN);
+	aniPath(secondN);
+	aniPath(w);
+	aniPath(wLine);
+}
+
 
 TweenMax.fromTo(".stlog0", 2, {drawSVG:"0%"}, {drawSVG: "100%"});
 

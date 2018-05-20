@@ -69,21 +69,6 @@ margin: 0;
     display: block;
     margin: 30px auto 20px auto;
 }
-
-.stlog0 {
-    stroke-dasharray: 0;
-    stroke-dashoffset: 0;
-    animation: dash 5s linear;
-  }
-  
-  @keyframes dash {
-    from {
-      stroke-dashoffset: 1000;
-    }
-    to {
-      stroke-dashoffset: 0;
-    }
-  }
   
 .circle-nav {
     width: 25px;
@@ -147,6 +132,7 @@ main {
 }
 
 /* Home section */
+
 .home {
     height: 100%;
     position: relative;
@@ -157,21 +143,24 @@ main {
 
 .home .skyline {
     width: 300%;
+    position: relative;
 }
 
 /* Skyline animation */
 
-// #Buildings {
-//     animation: mymove 5s infinite;
-//     position: relative;
-// }
+#Buildings {
+    position: relative;
+    animation: buildings 5s alternate infinite;
+
+}
+
+@keyframes buildings {
+    from {left: 0px;}
+    to {left: 500px;}
+}
 
 // #Buildings.buildings {
 //     transform: translateX(-3000px);
-// }
-
-// #Buildings.buildings {
-//     animation: mymove 20s infinite;
 // }
 
 // #Clouds.clouds {
@@ -185,10 +174,10 @@ main {
 //     transition: 100s;
 // }
 
-// #Cloud2 {
-//     transform: translateX(-3000px);
-//     transition: 40s;
-// }
+#Cloud2 {
+    position: relative;
+    animation: buildings 5s alternate infinite;
+}
 
 // #Cloud3 {
 //     transform: translateX(-3000px);
@@ -280,10 +269,6 @@ main {
     border: 1px solid black;
 }
 
-.thumbnail-list li:hover .arch-overlay {
-    opacity: 1;
-}
-
 .thumbnail-list li:hover .thumbnail-image {
     transform: scale(1.4);
 }
@@ -292,19 +277,25 @@ main {
     border-bottom: 1.5px solid var(--scarlet);
 }
 
-.arch-overlay button {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    border: 2px solid white;
-    color: white;
-    text-transform: uppercase;
-    background: var(--scarlet);
-    font-size: 1em;
-    padding: 10px;
-    text-align: center;
-    transform: translate(-50%, -50%);
-}
+// Uncomment to add button to arch elements
+
+// .thumbnail-list li:hover .arch-overlay {
+//          opacity: 1;
+//  }
+
+// .arch-overlay button {
+//     position: absolute;
+//     left: 50%;
+//     top: 50%;
+//     border: 2px solid white;
+//     color: white;
+//     text-transform: uppercase;
+//     background: var(--scarlet);
+//     font-size: 1em;
+//     padding: 10px;
+//     text-align: center;
+//     transform: translate(-50%, -50%);
+// }
 
 /* Websites section */
 
