@@ -13,7 +13,9 @@
 
 :root {
   --scarlet: #793236;
-  --backwhite: rgba(255, 255, 255, 0.925); }
+  --backwhite: rgba(255, 255, 255, 0.925);
+  --widthBig: 300%;
+  --widthMedium: ; }
 
 html {
   -webkit-box-sizing: border-box;
@@ -126,31 +128,14 @@ main {
           box-sizing: border-box;
   grid-column: 1 /-1; }
 
-.home .skyline {
-  width: 300%;
-  position: relative; }
-
-#Buildings {
+.skyline {
   position: relative;
-  -webkit-animation: buildings 5s alternate infinite;
-          animation: buildings 5s alternate infinite; }
+  width: var(--widthBig); }
 
-@-webkit-keyframes buildings {
-  from {
-    left: 0px; }
-  to {
-    left: 500px; } }
-
-@keyframes buildings {
-  from {
-    left: 0px; }
-  to {
-    left: 500px; } }
-
-#Cloud2 {
-  position: relative;
-  -webkit-animation: buildings 5s alternate infinite;
-          animation: buildings 5s alternate infinite; }
+.cloud-one, .cloud-two, .cloud-three, .cloud-four, .cloud-five, .cloud-six, .cloud-rain {
+  position: absolute;
+  width: var(--widthBig);
+  top: 0; }
 
 .arch {
   grid-column: 2 / -2; }
