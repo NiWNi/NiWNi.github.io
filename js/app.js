@@ -44,13 +44,7 @@ addListenerToMenuLinks(liLinks, 'click', showHideNavBar);
 
 
 
-//#region animations
-
-const slideBuildings = document.querySelector('#Buildings');
-const slideClouds = document.querySelector('#Clouds');
-const slideRain = document.querySelector('#Rain');
-const cloudFive = document.querySelector('#Cloud5');
-
+//#region Animations
 
 // Animate logo
 document.onload = animateLogo();
@@ -85,34 +79,45 @@ function animateLogo() {
 	aniPath(secondN);
 	aniPath(w);
 	aniPath(wLine);
+	// Animate skyline
+	setTimeout(() => {
+		animateSkyline();
+	}, 3000); 
+}
+// Create timeline object from GSAP
+
+function animateSkyline() {
+	let tl = new TimelineLite();
+
+	tl.to('.skyline', 100, {left: '-200%'}, 'same-time+=1')
+	.to('.cloud-one', 50, {left: 600, autoAlpha:0}, 'same-time')
+	.to('.cloud-two', 20, {left: 200}, 'same-time')
+	.to('.cloud-three', 20, {left: -200}, 'same-time')
+	.to('.cloud-four', 20, {left: 200}, 'same-time')
+	.to('.cloud-five', 35, {left: -900}, 'same-time')
+	.to('.cloud-rain', 20, {left: -300}, 0, 'end');
+	
+	let count = 0;
+	document.querySelector('.home').addEventListener('click', () => {
+		count += 1 ;
+		console.log(count);
+		if (count % 2 !== 0) {
+			tl.pause()
+		} else {
+			tl.play();
+		}
+	}
+);
+	// tl.seek('end');
+	// tl.timeScale(3);
 }
 
 
-TweenMax.fromTo(".stlog0", 2, {drawSVG:"0%"}, {drawSVG: "100%"});
 
-// TweenMax.to(".svg-moving", 20, {left:-600});
 
-// function checkClass() {
-// 	if (slideBuildings.classList.contains('buildings')) {
-// 		let computedStyle = window.getComputedStyle(slideBuildings);
-// 		slideBuildings.style.transform = computedStyle.transform;
-// 		slideBuildings.classList.remove('buildings');
-// 		slideClouds.classList.remove('clouds');
-// 		slideRain.classList.remove('rain');
-// 		cloudFive.classList.remove('clouds');
-// 	} else {
-// 		slideBuildings.style.transform = '';
-// 		slideBuildings.classList.add('buildings');
-// 		slideClouds.classList.add('clouds');
-// 		slideRain.classList.add('rain');
-// 		cloudFive.classList.add('clouds');
-// 	}
-// }
-
-// document.querySelector('.skyline').addEventListener('click', checkClass);
 // slideBuildings.addEventListener('touch', checkClass);
 
-//#endregion animations
+//#endregion Animations
 
 // Smooth scroll jquery
 $(document).ready(function () {

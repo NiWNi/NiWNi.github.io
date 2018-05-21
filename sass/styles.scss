@@ -20,6 +20,8 @@
 :root {
     --scarlet: #793236;
     --backwhite: rgba(255, 255, 255, 0.925);
+    --widthBig: 300%;
+    --widthMedium: ;
 }
 
 html {
@@ -141,63 +143,22 @@ main {
     grid-column: 1 /-1;
 }
 
-.home .skyline {
-    width: 300%;
+.skyline {
     position: relative;
+    width: var(--widthBig);
 }
 
-/* Skyline animation */
-
-#Buildings {
-    position: relative;
-    animation: buildings 5s alternate infinite;
-
+.cloud-one,
+.cloud-two,
+.cloud-three,
+.cloud-four,
+.cloud-five,
+.cloud-six,
+.cloud-rain {
+    position: absolute;
+    width: var(--widthBig);
+    top: 0;
 }
-
-@keyframes buildings {
-    from {left: 0px;}
-    to {left: 500px;}
-}
-
-// #Buildings.buildings {
-//     transform: translateX(-3000px);
-// }
-
-// #Clouds.clouds {
-//     transform: translateX(100px);
-//     transition: 10s;
-// }
-
-// #Cloud1.clouds {
-//     transform: translateX(1000px);
-//     transform: scale(1.5);
-//     transition: 100s;
-// }
-
-#Cloud2 {
-    position: relative;
-    animation: buildings 5s alternate infinite;
-}
-
-// #Cloud3 {
-//     transform: translateX(-3000px);
-//     transition: 40s;
-// }
-
-// #Cloud4 {
-//     transform: translateX(-3000px);
-//     transition: 40s;
-// }
-
-// #Cloud5.clouds {
-//     transform: scale(1.3);
-//     transition: 40s;
-// }
-
-// #Cloud6.clouds {
-    
-//     transition: 40s;
-// }
 
 /* Arch portfolio section */
 
@@ -564,6 +525,7 @@ footer ul li a {
 *
 */
 
+//#region MediaQueries
 /* Media query max 2048px width */
 
 @media screen and (max-width: 1024px) {
@@ -771,14 +733,7 @@ footer ul li a {
         grid-gap: 10px;
     }
 }
-
-
-
-
-
-
-
-
+//#endregion MediaQueries
 
 
 /*
@@ -787,7 +742,7 @@ footer ul li a {
 *
 *
 */
-
+//#region Lightbox
 html.lb-disable-scrolling {
     overflow: hidden;
     /* Position fixed required for iOS. Just putting overflow: hidden; on the body is not enough. */
@@ -996,3 +951,4 @@ html.lb-disable-scrolling {
     opacity: 1;
   }
   
+  //#endregion Lightbox
