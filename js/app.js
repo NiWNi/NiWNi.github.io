@@ -1,3 +1,51 @@
+'use strict'
+
+// Show navigation bar on small screens
+const navBar = document.querySelectorAll('.navigation-list');
+const circleNav = document.querySelector('.circle-nav');
+const navBarParent = document.querySelector('.navigation-bar');
+function showHideNavBar() {
+	
+	for (let i = 0; i < navBar.length; i++) {
+		navBar[i].classList.toggle('show-bar');
+	}
+}
+
+function closeNavBar() {
+	if (navBar[0].classList.contains('show-bar')) {
+		navBarParent.style.visibility = 'hidden';
+		for (let i = 0; i < navBar.length; i++) {
+			navBar[i].classList.remove('show-bar');
+		}
+	}
+}
+
+circleNav.addEventListener('click', showHideNavBar);
+
+
+// Once click on link close menu bar
+const liLinks = document.querySelectorAll('.navigation-list div');
+
+function addListenerToMenuLinks(list, event, handler) {
+	for (let i = 0; i < list.length; i++) {
+		list[i].addEventListener(event, handler);
+	}
+}
+
+// Function to close nav bar once clicked on link
+function closeCirNavBar() {
+  if (navBar[0].classList.contains('show-bar')) {
+    navBar[0].classList.remove('show-bar');
+  }
+}
+
+addListenerToMenuLinks(liLinks, 'click', showHideNavBar);
+
+
+
+
+//#region animations
+
 const slideBuildings = document.querySelector('#Buildings');
 const slideClouds = document.querySelector('#Clouds');
 const slideRain = document.querySelector('#Rain');
@@ -64,44 +112,7 @@ TweenMax.fromTo(".stlog0", 2, {drawSVG:"0%"}, {drawSVG: "100%"});
 // document.querySelector('.skyline').addEventListener('click', checkClass);
 // slideBuildings.addEventListener('touch', checkClass);
 
-// Show navigation bar on small screens
-const navBar = document.querySelectorAll('.navigation-list');
-const circleNav = document.querySelector('.circle-nav');
-
-function showHideNavBar() {
-	for (let i = 0; i < navBar.length; i++) {
-		navBar[i].classList.toggle('show-bar');
-	}
-}
-
-function closeNavBar() {
-	if (navBar[0].classList.contains('show-bar')) {
-		for (let i = 0; i < navBar.length; i++) {
-			navBar[i].classList.remove('show-bar');
-		}
-	}
-}
-
-circleNav.addEventListener('click', showHideNavBar);
-
-
-// Once click on link close menu bar
-const liLinks = document.querySelectorAll('.navigation-list div');
-
-function addListenerToMenuLinks(list, event, handler) {
-	for (let i = 0; i < list.length; i++) {
-		list[i].addEventListener(event, handler);
-	}
-}
-
-// Function to close nav bar once clicked on link
-function closeCirNavBar() {
-  if (navBar[0].classList.contains('show-bar')) {
-    navBar[0].classList.remove('show-bar');
-  }
-}
-
-addListenerToMenuLinks(liLinks, 'click', showHideNavBar);
+//#endregion animations
 
 // Smooth scroll jquery
 $(document).ready(function () {

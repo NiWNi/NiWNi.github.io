@@ -406,7 +406,6 @@ main {
 .cv-download a span {
     font-size: 0.8em;
     margin-top: 10px;
-    color: white;
 }
 
 .span-left {
@@ -419,6 +418,11 @@ main {
 
 .cv-logo {
     width: 30%;
+    transition: 0.5s ease;
+}
+
+.cv-download a:hover .cv-logo{
+    transform: scale(1.2);
 }
 
 /* Contact section */
@@ -580,10 +584,9 @@ footer ul li a {
         border-bottom: 1px solid var(--scarlet);
     }
     
-    .navigation-bar {
-        display: block;
-
-    }
+    // .navigation-bar {
+    //     display: block;
+    // }
 
     .navigation-bar div div {
         padding: 10px;
@@ -604,7 +607,6 @@ footer ul li a {
     }
 
     .navigation-list {
-        opacity: 0.5;
         display: flex;
         flex-direction: column;
         position: relative;
@@ -617,7 +619,6 @@ footer ul li a {
     }
 
     .navigation-list.show-bar {
-        opacity: 1;
         font-size: 1.3em;
         top: 0;
     }
