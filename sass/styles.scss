@@ -21,7 +21,8 @@
     --scarlet: #793236;
     --backwhite: rgba(255, 255, 255, 0.925);
     --widthBig: 300%;
-    --widthMedium: ;
+    --widthMedium: 600%;
+    --widthSmall: 400%;
 }
 
 html {
@@ -546,9 +547,11 @@ footer ul li a {
         border-bottom: 1px solid var(--scarlet);
     }
     
-    // .navigation-bar {
-    //     display: block;
-    // }
+    .navigation-bar {
+        display: block;
+        height: 100px;
+        
+    }
 
     .navigation-bar div div {
         padding: 10px;
@@ -586,8 +589,21 @@ footer ul li a {
     }
 
     /* Home section */
-    .home .skyline {
-        width: 600%;
+    .skyline {
+        position: relative;
+        width: var(--widthMedium);
+    }
+    
+    .cloud-one,
+    .cloud-two,
+    .cloud-three,
+    .cloud-four,
+    .cloud-five,
+    .cloud-six,
+    .cloud-rain {
+        position: absolute;
+        width: var(--widthMedium);
+        top: 0;
     }
 
     /* Architecture section */
@@ -666,8 +682,21 @@ footer ul li a {
 @media screen and (max-width: 1024px) {
 
     /* Home section */
-    .home .skyline {
-        width: 400%;
+    .skyline {
+        position: relative;
+        width: var(--widthSmall);
+    }
+    
+    .cloud-one,
+    .cloud-two,
+    .cloud-three,
+    .cloud-four,
+    .cloud-five,
+    .cloud-six,
+    .cloud-rain {
+        position: absolute;
+        width: var(--widthSmall);
+        top: 0;
     }
 
     /* Architecture section */
