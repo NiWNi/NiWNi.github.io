@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // Show navigation bar on small screens
 const navBar = document.querySelectorAll('.navigation-list');
@@ -7,12 +7,12 @@ const navBarParent = document.querySelector('.navigation-bar');
 
 function showHideNavBar() {
 	if (navBar[0].classList.contains('show-bar')) {
-		navBarParent.style.height = '60px'
+		navBarParent.style.height = '60px';
 		for (let i = 0; i < navBar.length; i++) {
 			navBar[i].classList.toggle('show-bar');
 		}
 	} else {
-		navBarParent.style.height = 'auto'
+		navBarParent.style.height = 'auto';
 		for (let i = 0; i < navBar.length; i++) {
 			navBar[i].classList.toggle('show-bar');
 		}
@@ -41,9 +41,9 @@ function addListenerToMenuLinks(list, event, handler) {
 
 // Function to close nav bar once clicked on link
 function closeCirNavBar() {
-  if (navBar[0].classList.contains('show-bar')) {
-    navBar[0].classList.remove('show-bar');
-  }
+	if (navBar[0].classList.contains('show-bar')) {
+		navBar[0].classList.remove('show-bar');
+	}
 }
 
 addListenerToMenuLinks(liLinks, 'click', showHideNavBar);
@@ -56,7 +56,7 @@ addListenerToMenuLinks(liLinks, 'click', showHideNavBar);
 // Animate logo
 document.onload = animateLogo();
 
-// Function snippet taken from https://jakearchibald.com/2013/animated-line-drawing-svg/
+// Function snippet from https://jakearchibald.com/2013/animated-line-drawing-svg/
 function aniPath(pathFromArray) {
 	const path = pathFromArray;
 	const length = path.getTotalLength();
@@ -94,29 +94,46 @@ function animateLogo() {
 // Create timeline object from GSAP
 
 function animateSkyline() {
-	let tl = new TimelineLite();
+	let tl = new TimelineLite({onUpdate:updateSlider});
 
 	tl.to('.skyline', 150, {left: '-200%'}, 'same-time')
-	.to('.cloud-one', 140, {left: 600, autoAlpha:0}, 'same-time+=1.25')
-	.to('.cloud-two', 20, {left: 200}, 'same-time+=1.5')
-	.to('.cloud-three', 20, {left: -200, top: 20, autoAlpha:0.3, rotate: 20}, 'same-time')
-	.to('.cloud-four', 20, {left: 200}, 'same-time+=1.5')
-	.to('.cloud-five', 35, {left: -900}, 'same-time+=2')
-	.to('.cloud-rain', 20, {left: -500, top: -100}, 'same-time');
+		.to('.cloud-one', 140, {left: 600, autoAlpha:0}, 'same-time+=1.25')
+		.to('.cloud-two', 20, {left: 200}, 'same-time+=1.5')
+		.to('.cloud-three', 20, {left: -200, top: 20, autoAlpha:0.3, rotate: 20}, 'same-time')
+		.to('.cloud-four', 20, {left: 200}, 'same-time+=1.5')
+		.to('.cloud-five', 35, {left: -900}, 'same-time+=2')
+		.to('.cloud-rain', 20, {left: -500, top: -100}, 'same-time');
 	
 	let count = 0;
 	document.querySelector('.home').addEventListener('click', () => {
 		count += 1 ;
 		console.log(count);
 		if (count % 2 !== 0) {
-			tl.pause()
+			tl.pause();
 		} else {
 			tl.play();
 		}
 	}
-);
+	);
 	// tl.seek('end');
 	// tl.timeScale(3);
+
+	$('#slider').slider({
+		orientation: "horizontal",
+		range: "min",
+		min: 0,
+		max: 100,
+		step: 0.1,
+		value: 127,
+		slide: function (event, ui) {
+			tl.pause();
+			tl.progress(ui.value/100);
+		}
+	});
+
+	function updateSlider() {
+		$('#slider').slider('value', tl.progress() * 100);
+	}
 }
 
 

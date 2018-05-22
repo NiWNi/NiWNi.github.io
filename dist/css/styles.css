@@ -16,7 +16,8 @@
   --backwhite: rgba(255, 255, 255, 0.925);
   --widthBig: 300%;
   --widthMedium: 600%;
-  --widthSmall: 400%; }
+  --widthSmall: 400%;
+  --widthXSmall: 800%; }
 
 html {
   -webkit-box-sizing: border-box;
@@ -122,7 +123,7 @@ main {
   padding: 170px 0 10px 0; }
 
 .home {
-  height: 100%;
+  width: 100%;
   position: relative;
   overflow: hidden;
   -webkit-box-sizing: border-box;
@@ -137,6 +138,24 @@ main {
   position: absolute;
   width: var(--widthBig);
   top: 0; }
+
+#slider {
+  background: #f1f1f1;
+  cursor: pointer;
+  height: 7px;
+  outline: none;
+  width: 100%; }
+
+#slider .ui-slider-range {
+  background: var(--scarlet);
+  outline: none; }
+
+.ui-widget-content {
+  border: none; }
+
+.ui-widget-content .ui-slider .ui-slider-handle {
+  height: 0.5em;
+  width: 0.5em; }
 
 .arch {
   grid-column: 2 / -2; }
@@ -466,7 +485,7 @@ footer ul li a {
   font-weight: bold;
   color: var(--scarlet); }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1050px) {
   .main-header {
     background: none; }
   .main-header a {
@@ -584,8 +603,12 @@ footer ul li a {
     grid-gap: 10px; } }
 
 @media screen and (max-width: 471px) {
-  .home .skyline {
-    width: 900%; }
+  .skyline {
+    position: relative;
+    width: var(--widthXSmall); }
+  .cloud-one, .cloud-two, .cloud-three, .cloud-four, .cloud-five, .cloud-six, .cloud-rain {
+    position: absolute;
+    width: var(--widthXSmall); }
   .thumbnail-list {
     grid-template-columns: 1fr;
     grid-gap: 10px; }

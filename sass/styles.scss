@@ -23,6 +23,7 @@
     --widthBig: 300%;
     --widthMedium: 600%;
     --widthSmall: 400%;
+    --widthXSmall: 800%;
 }
 
 html {
@@ -137,7 +138,7 @@ main {
 /* Home section */
 
 .home {
-    height: 100%;
+    width: 100%;
     position: relative;
     overflow: hidden;
     box-sizing: border-box;
@@ -159,6 +160,30 @@ main {
     position: absolute;
     width: var(--widthBig);
     top: 0;
+}
+
+#slider {
+    background: #f1f1f1;
+    cursor: pointer;
+    height: 7px;
+    outline: none;
+    width: 100%;
+}
+
+#slider .ui-slider-range { 
+    background: var(--scarlet);
+    outline: none;
+}
+
+.ui-widget-content {
+    border: none;
+}
+
+.ui-widget-content
+
+.ui-slider .ui-slider-handle {
+    height: 0.5em;
+    width: 0.5em;
 }
 
 /* Arch portfolio section */
@@ -529,7 +554,7 @@ footer ul li a {
 //#region MediaQueries
 /* Media query max 2048px width */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1050px) {
 
     /* Nav bar */
 
@@ -550,7 +575,7 @@ footer ul li a {
     .navigation-bar {
         display: block;
         height: 100px;
-        
+
     }
 
     .navigation-bar div div {
@@ -744,8 +769,20 @@ footer ul li a {
 @media screen and (max-width: 471px) {
 
     /* Home section */
-    .home .skyline {
-        width: 900%;
+    .skyline {
+        position: relative;
+        width: var(--widthXSmall);
+    }
+    
+    .cloud-one,
+    .cloud-two,
+    .cloud-three,
+    .cloud-four,
+    .cloud-five,
+    .cloud-six,
+    .cloud-rain {
+        position: absolute;
+        width: var(--widthXSmall);
     }
 
     /* Architecture section */
