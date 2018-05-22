@@ -146,16 +146,15 @@ main {
   outline: none;
   width: 100%; }
 
-#slider .ui-slider-range {
+#slider .ui-slider-range.ui-widget-header.ui-corner-all.ui-slider-range-min {
   background: var(--scarlet);
   outline: none; }
 
-.ui-widget-content {
+#slider .ui-widget-content {
   border: none; }
 
-.ui-widget-content .ui-slider .ui-slider-handle {
-  height: 0.5em;
-  width: 0.5em; }
+#slider .ui-slider-handle {
+  display: none; }
 
 .arch {
   grid-column: 2 / -2; }
