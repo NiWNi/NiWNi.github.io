@@ -72,6 +72,7 @@ margin: 0;
     width: 150px;
     display: block;
     margin: 30px auto 20px auto;
+    visibility: hidden;
 }
   
 .circle-nav {
@@ -172,10 +173,9 @@ main {
 
 #slider .ui-slider-range.ui-widget-header.ui-corner-all.ui-slider-range-min { 
     background: var(--scarlet);
-    outline: none;
 }
 
-#slider .ui-widget-content {
+#slider.ui-widget-content {
     border: none;
 }
 

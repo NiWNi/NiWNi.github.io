@@ -56,7 +56,8 @@ body {
 .logo {
   width: 150px;
   display: block;
-  margin: 30px auto 20px auto; }
+  margin: 30px auto 20px auto;
+  visibility: hidden; }
 
 .circle-nav {
   width: 25px;
@@ -147,10 +148,9 @@ main {
   width: 100%; }
 
 #slider .ui-slider-range.ui-widget-header.ui-corner-all.ui-slider-range-min {
-  background: var(--scarlet);
-  outline: none; }
+  background: var(--scarlet); }
 
-#slider .ui-widget-content {
+#slider.ui-widget-content {
   border: none; }
 
 #slider .ui-slider-handle {

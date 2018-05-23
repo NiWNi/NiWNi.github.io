@@ -82,6 +82,10 @@ function animateLogo() {
 	const secondN = document.querySelectorAll('.stlog0')[0];
 	const w = document.querySelectorAll('.stlog1')[0];
 	const wLine = document.querySelectorAll('.stlog1')[1];
+	const svgLogo = document.querySelector('.logo');
+	// Set logo to be visible
+	svgLogo.style.visibility = 'visible';
+	// Animate logo
 	aniPath(firstN);
 	aniPath(secondN);
 	aniPath(w);
@@ -91,8 +95,8 @@ function animateLogo() {
 		animateSkyline();
 	}, 3000); 
 }
-// Create timeline object from GSAP
 
+// Create timeline object from GSAP
 function animateSkyline() {
 	let tl = new TimelineLite({onUpdate:updateSlider});
 
