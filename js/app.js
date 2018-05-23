@@ -7,12 +7,10 @@ const navBarParent = document.querySelector('.navigation-bar');
 
 function showHideNavBar() {
 	if (navBar[0].classList.contains('show-bar')) {
-		navBarParent.style.height = '60px';
 		for (let i = 0; i < navBar.length; i++) {
 			navBar[i].classList.toggle('show-bar');
 		}
 	} else {
-		navBarParent.style.height = 'auto';
 		for (let i = 0; i < navBar.length; i++) {
 			navBar[i].classList.toggle('show-bar');
 		}
@@ -106,12 +104,16 @@ function animateSkyline() {
 		.to('.cloud-three', 20, {left: -200, top: 20, autoAlpha:0.3, rotate: 20}, 'same-time')
 		.to('.cloud-four', 20, {left: 200}, 'same-time+=1.5')
 		.to('.cloud-five', 35, {left: -900}, 'same-time+=2')
+		.to('.cloud-six', 35, {left: -1900}, 'same-time')
+		.to('.cloud-seven', 35, {left: -1900}, 'same-time')
+		.to('.cloud-eight', 35, {left: -1900}, 'same-time')
+		.to('.cloud-nine', 35, {left: -1900}, 'same-time')
+		.to('.rain', 20, {left: -500, top: -100}, 'same-time')
 		.to('.cloud-rain', 20, {left: -500, top: -100}, 'same-time');
 	
 	let count = 0;
 	document.querySelector('.home').addEventListener('click', () => {
-		count += 1 ;
-		console.log(count);
+		count += 1;
 		if (count % 2 !== 0) {
 			tl.pause();
 		} else {
