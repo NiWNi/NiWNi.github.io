@@ -19,10 +19,12 @@
     --scarlet: #793236;
     --backwhite: rgba(255, 255, 255, 0.925);
     --widthBig: 300%;
-    --widthMedium: 600%;
-    --widthSmall: 400%;
-    --widthXSmall: 800%;
+    --widthLaptopM: 290%;
+    --widthLaptopS: 330%;
+    --widthTablet: 450%;
+    --widthTabletS: 590%;
     --widthPhones: 1000%;
+    --widthPhonesL: 950%;
 }
 
 html {
@@ -338,6 +340,7 @@ main {
     display: flex;
     border: 1px dotted black;
     border-radius: 20px;
+    font-size: 0.9em;
     padding: 100px 20px 20px 20px;
 }
 
@@ -351,7 +354,7 @@ main {
 .h3-about {
     text-align: center;
     font-size: 1em;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .cv-download {
@@ -553,8 +556,74 @@ footer ul li a {
 
 //#region MediaQueries
 
-/* Media query max 2048px width */
-@media screen and (max-width: 1050px) {
+
+
+/* Media query max 1600px width */
+@media screen and (max-width: 1600px) {
+    /* Home section */
+    .skyline {
+        width: var(--widthLaptopM);
+    }
+    .cloud-one,
+    .cloud-two,
+    .cloud-three,
+    .cloud-four,
+    .cloud-five,
+    .cloud-six,
+    .cloud-seven,
+    .cloud-eight,
+    .cloud-nine,
+    .cloud-rain {
+        width: var(--widthLaptopM);
+    }
+    /* Architecture section */
+    .thumbnail-list {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 30px;
+    }
+    /* Websites section */
+    .websites-list {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+}
+
+/* Media query max 1024px width */
+@media screen and (max-width: 1025px) {
+    /* Main */
+    main {
+        grid-template-columns: 1fr 20fr 1fr;
+    }
+    /* Home section */
+    .skyline {
+        width: var(--widthLaptopS);
+    }
+    .cloud-one,
+    .cloud-two,
+    .cloud-three,
+    .cloud-four,
+    .cloud-five,
+    .cloud-six,
+    .cloud-seven,
+    .cloud-eight,
+    .cloud-nine,
+    .cloud-rain {
+        width: var(--widthLaptopS);
+    }
+    /* Architecture section */
+    .thumbnail-list {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+    }
+    /* Websites section */
+    .websites-list {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+}
+
+/* Media query max 768px width */
+@media screen and (max-width: 768px) {
     /* Nav bar */
     .main-header {
         background: none;
@@ -603,7 +672,7 @@ footer ul li a {
     /* Home section */
     .skyline {
         position: relative;
-        width: var(--widthMedium);
+        width: var(--widthTablet);
     }
     .cloud-one,
     .cloud-two,
@@ -616,18 +685,18 @@ footer ul li a {
     .cloud-nine,
     .cloud-rain {
         position: absolute;
-        width: var(--widthMedium);
+        width: var(--widthTablet);
         top: 0;
     }
     /* Architecture section */
     .thumbnail-list {
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 30px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
     }
     /* websites section */
     .websites-list {
-        grid-template-columns: 1fr;
-        grid-gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
     }
     /* About section */
     .about-content {
@@ -674,12 +743,16 @@ footer ul li a {
     }
 }
 
-/* Media query max 1024px width */
-@media screen and (max-width: 1024px) {
+/* Media query max 651px width */
+@media screen and (max-width: 651px) {
+    /* Main */
+    main {
+        grid-template-columns: 1fr 8fr 1fr;
+    }
     /* Home section */
     .skyline {
         position: relative;
-        width: var(--widthSmall);
+        width: var(--widthTabletS);
     }
     .cloud-one,
     .cloud-two,
@@ -692,82 +765,27 @@ footer ul li a {
     .cloud-nine,
     .cloud-rain {
         position: absolute;
-        width: var(--widthSmall);
+        width: var(--widthTabletS);
         top: 0;
     }
     /* Architecture section */
     .thumbnail-list {
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 30px;
-    }
-    /* Websites section */
-    .websites-list {
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 30px;
-    }
-}
-
-/* Media query max 741px width */
-@media screen and (max-width: 741px) {
-    /* Home section */
-    .home .skyline {
-        width: 600%;
-    }
-    /* Architecture section */
-    .thumbnail-list {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 30px;
     }
     /* Websites section */
     .websites-list {
         grid-template-columns: 1fr;
-        grid-gap: 10px;
+        grid-gap: 30px;
     }
 }
 
-/* Media query max 471px width */
-@media screen and (max-width: 471px) {
+/* Media query max 440px width */
+@media screen and (max-width: 484px) {
     /* Main */
     main {
-        grid-template-columns: 20px 1fr 20px;
+        grid-template-columns: 2fr 10fr 2fr;
     }
-
-    /* Home section */
-    .skyline {
-        position: relative;
-        width: var(--widthXSmall);
-    }
-    .cloud-one,
-    .cloud-two,
-    .cloud-three,
-    .cloud-four,
-    .cloud-five,
-    .cloud-six,
-    .cloud-seven,
-    .cloud-eight,
-    .cloud-nine,
-    .cloud-rain {
-        position: absolute;
-        width: var(--widthXSmall);
-    }
-    /* Architecture section */
-    .thumbnail-list {
-        grid-template-columns: 1fr;
-        grid-gap: 10px;
-    }
-    /* Websites section */
-    .websites-list {
-        grid-template-columns: 1fr;
-        grid-gap: 10px;
-    }
-}
-
-/* Media query max 471px width */
-@media screen and (max-width: 321px) {
-    .section-titles {
-        font-size: 1.2em;
-    }
-
     /* Navigation bar */
     .logo {
         width: 120px;
@@ -776,7 +794,7 @@ footer ul li a {
     /* Home section */
     .home .skyline {
         position: relative;
-        width: var(--widthPhones);
+        width: var(--widthPhonesL);
     }
     .cloud-one,
     .cloud-two,
@@ -789,7 +807,7 @@ footer ul li a {
     .cloud-nine,
     .cloud-rain {
         position: absolute;
-        width: var(--widthPhones);
+        width: var(--widthPhonesL);
     }
     /* Architecture section */
     .thumbnail-list {
@@ -826,6 +844,34 @@ footer ul li a {
     }
 }
 
+/* Media query max 325px width */
+@media screen and (max-width: 325px) {
+    /* Main */
+    main {
+        grid-template-columns: 20px 1fr 20px;
+    }
+    .section-titles {
+        font-size: 1.2em;
+    }
+    /* Home section */
+    .home .skyline {
+        position: relative;
+        width: var(--widthPhones);
+    }
+    .cloud-one,
+    .cloud-two,
+    .cloud-three,
+    .cloud-four,
+    .cloud-five,
+    .cloud-six,
+    .cloud-seven,
+    .cloud-eight,
+    .cloud-nine,
+    .cloud-rain {
+        position: absolute;
+        width: var(--widthPhones);
+    }
+}
 //#endregion MediaQueries
 
 /*
