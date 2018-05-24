@@ -98,18 +98,45 @@ function animateLogo() {
 function animateSkyline() {
 	let tl = new TimelineLite({onUpdate:updateSlider});
 
-	tl.to('.skyline', 150, {left: '-200%'}, 'same-time')
-		.to('.cloud-one', 140, {left: 600, autoAlpha:0}, 'same-time+=1.25')
-		.to('.cloud-two', 20, {left: 200}, 'same-time+=1.5')
-		.to('.cloud-three', 20, {left: -200, top: 20, autoAlpha:0.3, rotate: 20}, 'same-time')
-		.to('.cloud-four', 20, {left: 200}, 'same-time+=1.5')
-		.to('.cloud-five', 35, {left: -900}, 'same-time+=2')
-		.to('.cloud-six', 35, {left: -1900}, 'same-time')
-		.to('.cloud-seven', 35, {left: -1900}, 'same-time')
-		.to('.cloud-eight', 35, {left: -1900}, 'same-time')
-		.to('.cloud-nine', 35, {left: -1900}, 'same-time')
-		.to('.rain', 20, {left: -500, top: -100}, 'same-time')
-		.to('.cloud-rain', 20, {left: -500, top: -100}, 'same-time');
+	let skylineLeftLaptopM = -2789;
+	let timeSlide = 100;
+	let timeSlideCloud = 
+
+	tl.to('.skyline', timeSlide, {left: skylineLeftLaptopM}, 'first-section')
+		.to('.cloud-one', 100, {left: 400, top: 30, autoAlpha: 0}, 'first-section+=1.25')
+		.to('.cloud-two', 100, {left: 800, autoAlpha: 0.1}, 'first-section+=1.5')
+		.to('.cloud-three', 100, {left: -200, top: -40, autoAlpha:0.3, rotate: 20}, 'first-section')
+		.to('.cloud-four', 20, {left: 200}, 'first-section+=1.5')
+		.to('.cloud-five', 35, {left: -900}, 'first-section+=2')
+		.to('.cloud-six', 35, {left: -1900}, 'first-section')
+		.to('.cloud-seven', 55, {left: -1900, top: 100, autoAlpha: 0}, 'first-section')
+		.to('.cloud-eight', 35, {left: -1900, autoAlpha: 0.2}, 'first-section')
+		.to('.cloud-nine', 65, {left: -2400}, 'first-section')
+		.to('.rain', 20, {left: -500,  top: -100}, 'first-section')
+		.to('.rain', 2, {top: 50, autoAlpha:0}, 'first-section+=2.5')
+		.to('.rain', 0, {top: -75, autoAlpha: 1}, 'first-section+=13')
+		.to('.rain', 2, {top: 50, autoAlpha:0}, 'first-section+=13')
+		.to('.rain', 0, {top: -100, autoAlpha: 1}, 'first-section+=24')
+		.to('.rain', 2, {top: 50, autoAlpha:0}, 'first-section+=24')
+		.to('.rain', 0, {top: -100, autoAlpha: 1}, 'first-section+=53')
+		.to('.rain', 4, {top: 50, autoAlpha:0}, 'first-section+=53')
+		.to('.rain', 0, {top: -100, autoAlpha: 1}, 'first-section+=58')
+		.to('.rain', 4, {top: 50, autoAlpha:0}, 'first-section+=58')
+		.to('.rain', 0, {top: -100, autoAlpha: 1}, 'first-section+=60')
+		.to('.rain', 4, {top: 50, autoAlpha:0}, 'first-section+=60')
+		.to('.rain', 0, {top: -100, autoAlpha: 1}, 'first-section+=65')
+		.to('.rain', 4, {top: 50, autoAlpha:0}, 'first-section+=65')
+		.to('.rain', 0, {top: -100, autoAlpha: 1}, 'first-section+=80')
+		.to('.rain', 4, {top: 50, autoAlpha:0}, 'first-section+=80')
+		.to('.rain', 0, {top: -100, autoAlpha: 1}, 'first-section+=85')
+		.to('.rain', 4, {top: 50, autoAlpha:0}, 'first-section+=85')
+		.to('.rain', 0, {top: -100, autoAlpha: 1}, 'first-section+=90')
+		.to('.rain', 4, {top: 50, autoAlpha:0}, 'first-section+=90')
+		.to('.rain', 0, {top: -100, autoAlpha: 1}, 'first-section+=95')
+		.to('.rain', 4, {top: 50, autoAlpha:0}, 'first-section+=95')
+		.to('.rain', 0, {top: -100, autoAlpha: 1}, 'first-section+=99')
+		.to('.rain', 4, {top: 50, autoAlpha:0}, 'first-section+=99')
+		.to('.cloud-rain', 20, {left: -500, top: -100}, 'first-section');
 	
 	let count = 0;
 	document.querySelector('.home').addEventListener('click', () => {

@@ -573,7 +573,7 @@ footer ul li a {
     .cloud-seven,
     .cloud-eight,
     .cloud-nine,
-    .cloud-rain {
+    .cloud-rain, .rain {
         width: var(--widthLaptopM);
     }
     /* Architecture section */
@@ -607,7 +607,7 @@ footer ul li a {
     .cloud-seven,
     .cloud-eight,
     .cloud-nine,
-    .cloud-rain {
+    .cloud-rain, .rain {
         width: var(--widthLaptopS);
     }
     /* Architecture section */
@@ -683,7 +683,7 @@ footer ul li a {
     .cloud-seven,
     .cloud-eight,
     .cloud-nine,
-    .cloud-rain {
+    .cloud-rain, .rain {
         position: absolute;
         width: var(--widthTablet);
         top: 0;
@@ -763,7 +763,7 @@ footer ul li a {
     .cloud-seven,
     .cloud-eight,
     .cloud-nine,
-    .cloud-rain {
+    .cloud-rain, .rain {
         position: absolute;
         width: var(--widthTabletS);
         top: 0;
@@ -805,7 +805,7 @@ footer ul li a {
     .cloud-seven,
     .cloud-eight,
     .cloud-nine,
-    .cloud-rain {
+    .cloud-rain, .rain {
         position: absolute;
         width: var(--widthPhonesL);
     }
@@ -867,7 +867,7 @@ footer ul li a {
     .cloud-seven,
     .cloud-eight,
     .cloud-nine,
-    .cloud-rain {
+    .cloud-rain, .rain {
         position: absolute;
         width: var(--widthPhones);
     }

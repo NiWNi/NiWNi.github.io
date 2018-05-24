@@ -497,7 +497,7 @@ footer ul li a {
 @media screen and (max-width: 1600px) {
   .skyline {
     width: var(--widthLaptopM); }
-  .cloud-one, .cloud-two, .cloud-three, .cloud-four, .cloud-five, .cloud-six, .cloud-seven, .cloud-eight, .cloud-nine, .cloud-rain {
+  .cloud-one, .cloud-two, .cloud-three, .cloud-four, .cloud-five, .cloud-six, .cloud-seven, .cloud-eight, .cloud-nine, .cloud-rain, .rain {
     width: var(--widthLaptopM); }
   .thumbnail-list {
     grid-template-columns: repeat(4, 1fr);
@@ -511,7 +511,7 @@ footer ul li a {
     grid-template-columns: 1fr 20fr 1fr; }
   .skyline {
     width: var(--widthLaptopS); }
-  .cloud-one, .cloud-two, .cloud-three, .cloud-four, .cloud-five, .cloud-six, .cloud-seven, .cloud-eight, .cloud-nine, .cloud-rain {
+  .cloud-one, .cloud-two, .cloud-three, .cloud-four, .cloud-five, .cloud-six, .cloud-seven, .cloud-eight, .cloud-nine, .cloud-rain, .rain {
     width: var(--widthLaptopS); }
   .thumbnail-list {
     grid-template-columns: repeat(4, 1fr);
@@ -566,7 +566,7 @@ footer ul li a {
   .skyline {
     position: relative;
     width: var(--widthTablet); }
-  .cloud-one, .cloud-two, .cloud-three, .cloud-four, .cloud-five, .cloud-six, .cloud-seven, .cloud-eight, .cloud-nine, .cloud-rain {
+  .cloud-one, .cloud-two, .cloud-three, .cloud-four, .cloud-five, .cloud-six, .cloud-seven, .cloud-eight, .cloud-nine, .cloud-rain, .rain {
     position: absolute;
     width: var(--widthTablet);
     top: 0; }
@@ -618,7 +618,7 @@ footer ul li a {
   .skyline {
     position: relative;
     width: var(--widthTabletS); }
-  .cloud-one, .cloud-two, .cloud-three, .cloud-four, .cloud-five, .cloud-six, .cloud-seven, .cloud-eight, .cloud-nine, .cloud-rain {
+  .cloud-one, .cloud-two, .cloud-three, .cloud-four, .cloud-five, .cloud-six, .cloud-seven, .cloud-eight, .cloud-nine, .cloud-rain, .rain {
     position: absolute;
     width: var(--widthTabletS);
     top: 0; }
@@ -638,7 +638,7 @@ footer ul li a {
   .home .skyline {
     position: relative;
     width: var(--widthPhonesL); }
-  .cloud-one, .cloud-two, .cloud-three, .cloud-four, .cloud-five, .cloud-six, .cloud-seven, .cloud-eight, .cloud-nine, .cloud-rain {
+  .cloud-one, .cloud-two, .cloud-three, .cloud-four, .cloud-five, .cloud-six, .cloud-seven, .cloud-eight, .cloud-nine, .cloud-rain, .rain {
     position: absolute;
     width: var(--widthPhonesL); }
   .thumbnail-list {
@@ -671,7 +671,7 @@ footer ul li a {
   .home .skyline {
     position: relative;
     width: var(--widthPhones); }
-  .cloud-one, .cloud-two, .cloud-three, .cloud-four, .cloud-five, .cloud-six, .cloud-seven, .cloud-eight, .cloud-nine, .cloud-rain {
+  .cloud-one, .cloud-two, .cloud-three, .cloud-four, .cloud-five, .cloud-six, .cloud-seven, .cloud-eight, .cloud-nine, .cloud-rain, .rain {
     position: absolute;
     width: var(--widthPhones); } }
 
