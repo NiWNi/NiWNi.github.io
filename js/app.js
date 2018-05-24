@@ -55,9 +55,9 @@ addListenerToMenuLinks(liLinks, 'click', showHideNavBar);
 document.onload = animateLogo();
 
 // Function snippet from https://jakearchibald.com/2013/animated-line-drawing-svg/
-function aniPath(pathFromArray) {
+function aniPath(length, pathFromArray) {
 	const path = pathFromArray;
-	const length = path.getTotalLength();
+	// const length = path.getTotalLength(); //Not supported, changed to real length
 	// Clear previous transition
 	path.style.transition = path.style.WebkitTransition =
 	'none';
@@ -81,13 +81,16 @@ function animateLogo() {
 	const w = document.querySelectorAll('.stlog1')[0];
 	const wLine = document.querySelectorAll('.stlog1')[1];
 	const svgLogo = document.querySelector('.logo');
+	const nLength = 160.72344970703125;
+	const wLength = 313.7012023925781;
+	const wLineLength = 78.5999984741211;
 	// Set logo to be visible
 	svgLogo.style.visibility = 'visible';
 	// Animate logo
-	aniPath(firstN);
-	aniPath(secondN);
-	aniPath(w);
-	aniPath(wLine);
+	aniPath(nLength, firstN);
+	aniPath(nLength, secondN);
+	aniPath(wLength, w);
+	aniPath(wLineLength, wLine);
 	// Animate skyline
 	setTimeout(() => {
 		animateSkyline();

@@ -15,7 +15,7 @@ var pngquant = require('imagemin-pngquant');
 
 gulp.task('default', ['styles', 'lint', 'copy-html'], function() {
 	gulp.watch('sass/**/*.scss', ['styles']);
-	// gulp.watch('js/**/*.js', ['lint', 'scripts']).on('change', browserSync.reload);
+	gulp.watch('js/**/*.js', ['lint', 'scripts']).on('change', browserSync.reload);
 	gulp.watch('./index.html', ['copy-html']).on('change', browserSync.reload);
 	browserSync.init({
 		server: './'
