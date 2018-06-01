@@ -47,8 +47,6 @@ function closeCirNavBar() {
 addListenerToMenuLinks(liLinks, 'click', showHideNavBar);
 
 
-
-
 //#region Animations
 
 // Animate logo
@@ -101,14 +99,16 @@ function animateLogo() {
 function animateSkyline() {
 	let tl = new TimelineLite({onUpdate:updateSlider});
 
-	let skylineLeftLaptopM = -2789;
-	let timeSlide = 100;
-	let timeSlideCloud = 
+	const timeSlide = 100;
+	const windWidth = window.innerWidth;
+	const slideBuildingsWidth = document.querySelector('#Buildings');
+	const skylineWidth = slideBuildingsWidth.getBoundingClientRect().width;
+	const skylineLeftSlide = -1 * skylineWidth / 1.86;
 
-	tl.to('.skyline', timeSlide, {left: skylineLeftLaptopM}, 'first-section')
-		.to('.cloud-one', 100, {left: 400, top: 30, autoAlpha: 0}, 'first-section+=1.25')
-		.to('.cloud-two', 100, {left: 800, autoAlpha: 0.1}, 'first-section+=1.5')
-		.to('.cloud-three', 100, {left: -200, top: -40, autoAlpha:0.3, rotate: 20}, 'first-section')
+	tl.to('.skyline', timeSlide, {left: skylineLeftSlide}, 'first-section')
+		.to('.cloud-one', 100, {left: skylineLeftSlide / 6, top: 30, autoAlpha: 0}, 'first-section+=1.25')
+		.to('.cloud-two', 100, {left: skylineLeftSlide / 3, autoAlpha: 0.1}, 'first-section+=1.5')
+		.to('.cloud-three', 100, {left: -1 * skylineLeftSlide / 12, top: -40, autoAlpha:0.3, rotate: 20}, 'first-section')
 		.to('.cloud-four', 20, {left: 200}, 'first-section+=1.5')
 		.to('.cloud-five', 35, {left: -900}, 'first-section+=2')
 		.to('.cloud-six', 35, {left: -1900}, 'first-section')
@@ -171,9 +171,6 @@ function animateSkyline() {
 		$('#slider').slider('value', tl.progress() * 100);
 	}
 }
-
-
-// slideBuildings.addEventListener('touch', checkClass);
 
 //#endregion Animations
 
