@@ -1,13 +1,31 @@
-# My personal website
+# An awesome website
 
-## Motivation
-Personal website to showcase all my work as architect and web designer and developer.
+Personal website to showcase all my work as architec and web designer and developer
 
-## Third party libraries used
-- Lightbox 2, by Loskesh Dhakar, many thanks and your deserved attribution.
-http://lokeshdhakar.com/projects/lightbox2/
+## Getting Started
+
+- Visit the live version [here](https://niweini.github.io/).
+- Download or clone this repository. 
+
+### Prerequisites
+
+No prerequisites needed.
+
+### Installing
+
+No need to install any external library, content provided in repo or through cdn.
+
+## Built With
+
+* [Greenshock](https://greensock.com/) - Animation platform
+* [Lightbox 2](http://lokeshdhakar.com/projects/lightbox2/) - Ligthbox to display pictures
+
+## Contributing
+
+Pull request may not be accepted
 
 ## License
-Website code under MIT License, exclud those parts and libraries taken from third parties, like Lightbox, which will have their own license.
-Images are propietary and all original creations except from those attributed to their original owners, LA hotel by asap llpc and 
-Hangzhou hospital by beades arquitectos sap.
+
+Website code under MIT License - see the License.md file for details, exclud those parts and libraries borrowed from third parties, like Lightbox, which will have their own license.
+
+All images are propietary except from those attributed to their original owners. Please ask for permission to reproduce them. Thanks.
