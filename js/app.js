@@ -1,5 +1,18 @@
 'use strict';
 
+// Add service worker
+if ('serviceWorker' in navigator) {
+	window.addEventListener('load', function() {
+	  navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+		// Registration was successful
+		console.log('ServiceWorker registration successful with scope: ', registration.scope);
+	  }).catch(function(err) {
+		// registration failed :(
+		console.log('ServiceWorker registration failed: ', err);
+	  });
+	});
+  }
+
 // Show navigation bar on small screens
 const navBar = document.querySelectorAll('.navigation-list');
 const circleNav = document.querySelector('.circle-nav');
